@@ -101,31 +101,33 @@
             </div>
             <div class="contactForm">
                 <h2>Send a Message</h2>
-                <div class="formBox">
+            <form onsubmit="return false"> 
+                <div id="formulario" class="formBox">
                     <div class="inputBox w50">
-                        <input type="text" name="" required>
+                        <input type="text" name="firstName" required>
                         <span>First Name</span>
                     </div>
                     <div class="inputBox w50">
-                        <input type="text" name="" required>
+                        <input type="text" name="lastName" required>
                         <span>Last Name</span>
                     </div>
                     <div class="inputBox w50">
-                        <input type="text" name="" required>
+                        <input type="text" name="email" required>
                         <span>Email Address</span>
                     </div>
                     <div class="inputBox w50">
-                        <input type="text" name="" required>
+                        <input type="text" name="phone" required>
                         <span>Mobile Number</span>
                     </div>
                     <div class="inputBox w100">
-                        <textarea name="" required></textarea>
+                        <textarea name="message" required></textarea>
                         <span>Write your message here...</span>
                     </div>
                     <div class="inputBox w100">
-                        <input type="submit" value="Send">
+                        <input id="sendButton" type="submit" value="Send">
                     </div>
                 </div>
+            </form>
             </div>
         </div>
     </section>
@@ -135,7 +137,7 @@
         <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x footer-icon"></i></a>
         <a href="https://wa.me/+52331462531" target="_blank"><i class="fab fa-whatsapp fa-2x footer-icon"></i></a>
         <a href="mailto: abc@example.com/" target="_blank"><i class="fas fa-envelope fa-2x footer-icon"></i></a>
-        <p>© Copyright 2018 Paw2Go!</p>
+        <p>© Copyright 2021 Paw2Go!</p>
     </footer>
 
     <!-- Bootstrap JS -->
@@ -148,6 +150,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+        <script src="/script-contact.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
 </body>
 
 </html>
