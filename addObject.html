@@ -69,32 +69,38 @@
         </nav>
     </section>
 
-    <main class="main contenedor">
+    <main class="main">
+        <div class="contenido-formulario">
         <h2 class="titulo">Add new Items</h2>
         <form class="formulario">
             <div class="campo">
                 <label for="">Nombre del producto</label>
-                <input class="form-control" type="text" placeholder="Ingresa el nombre del producto nuevo" aria-label=".form-control example">
+                <input class="form-control" type="text" placeholder="Ingresa el nombre del producto nuevo" aria-label=".form-control example" id="nombre">
             </div>
             <div class="campo">
                 <label for="">Descripcion del producto</label>
-                <input class="form-control" type="text" placeholder="Ingresa una descripcion del producto nuevo" aria-label="default input example">   
+                <input class="form-control" type="text" placeholder="Ingresa una descripcion del producto nuevo" aria-label="default input example" id="descripcion">   
             </div>
             
             <div class="campo">
                 <label for="">Prezio del producto</label>
-                <input class="form-control" type="text" placeholder="Ingresa el precio del producto nuevo" aria-label=".form-control-sm example">
+                <input class="form-control" type="text" placeholder="Ingresa el precio del producto nuevo" aria-label=".form-control-sm example" id="precio">
             </div>
 
             <div class="campo">
                 <label for="">URL Imagen del producto</label>
-                <input class="form-control" type="text" placeholder="Ingresa la URL de la imagen del producto nuevo" aria-label=".form-control-sm example">
+                <input class="form-control" type="text" placeholder="Ingresa la URL de la imagen del producto nuevo" aria-label=".form-control-sm example" id="link">
             </div>
         </form>
         
         <div class="botones">
-            <button>Enviar</button>
-            <button>Mostrar</button>
+            <button id="boton">Guardar</button>
+            <button id="boton-mostrar">Mostrar</button>
+        </div>
+        </div>
+
+        <div id="list-items">
+
         </div>
         
     </main>
@@ -118,6 +124,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="./Items.js"></script>
 </body>
 
 </html>
