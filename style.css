@@ -520,3 +520,29 @@
         font-weight: 900;
     }
 }
+
+/* Grooming */
+
+/*Perro y Gato Iconos*/
+#icon {
+  font-size: 180px;
+  color: #a61312;
+  background-color: #eae1c7;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 13rem;
+  height: 13rem;
+}
+.row{
+  margin: auto 23%;
+}
+
+#TellUs { 
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: 'Luckiest Guy', cursive;
+  color: #a61312;
+}
+
