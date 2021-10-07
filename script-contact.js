@@ -6,10 +6,8 @@ btn.addEventListener('click', ()=> {
         alert("Te falta algun campo")
     } else {
         Email.send({
-            Host:"smtp.mailtrap.io",
-            Username: "bea55e6deddf9e",
-            Password:"54d196e0805283",
-            To: "paw2go@gmail.com",
+            SecureToken: "2183d7cd-b1c8-448b-9494-e28df5ea3c1e",
+            To: "paw2go.contacto@gmail.com",
             From:inputs.elements["email"].value,
             Subject: "Contacto - Paw2Go!",
             Body:"Buen dia, recibiste el siguiente mensaje desde la pagina web." + 
