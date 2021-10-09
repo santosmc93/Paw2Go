@@ -546,3 +546,24 @@
   color: #a61312;
 }
 
+.hoverIcons:hover{
+  background-color: #060302;
+  border-radius: 50%;
+}
+
+/*Formularios*/
+
+#formulary{
+  
+}
+#formulary div{
+  margin-top: 20px;
+}
+
+.owner{
+  border: #060302 solid 2px;
+}
+
+.SpecialInst{
+  height: 20px;
+}
