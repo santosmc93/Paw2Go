@@ -551,6 +551,10 @@
   border-radius: 50%;
 }
 
+.positionIcons{
+  text-align: center;
+}
+
 /*Formularios*/
 
 #formulary{
