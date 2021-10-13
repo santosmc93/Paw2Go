@@ -1,0 +1,121 @@
+/*NavBar*/
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#NavBar {
+    background-color: #eae1c7;
+    padding: 1% 10%;
+}
+
+#NavBar a {
+    color: #060302;
+}
+
+#navbarNav a{
+    color: #a61312;
+}
+
+.navbar-icon-lg {
+    width: 5rem;
+    margin-right: 3rem;
+}
+
+.navbar-icon-sm{
+    display: none;
+}
+
+.navbar-brand {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #a61312 !important;
+}
+
+.dropdown-menu {
+  background-color: #fdf7e6;
+  font-size: 1.3rem;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(166,19,18, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #a61312;
+} 
+
+.nav-item {
+    padding: 0 1.7rem;
+}
+
+.nav-link { 
+    font-size: 2rem;
+}
+
+
+/* imagen inicio */
+
+.imageninicio{
+    display: block;
+    margin:auto 0%;
+    float: right;
+    margin-right: 20px;
+}
+
+
+
+/* 
+carrusel productos */
+#carrusel {
+    
+    width:600px;
+    overflow:hidden;
+    height:203px;
+    position:relative;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+ 
+#carrusel .left-arrow {
+    position:absolute;
+    left:10px;
+    z-index:1;
+    top:50%;
+    margin-top:-9px;
+}
+ 
+#carrusel .right-arrow {
+    position:absolute;
+    right:10px;
+    z-index:1;
+    top:50%;
+    margin-top:-9px;
+}
+ 
+.carrusel {
+    width:4000px;
+    left:0px;
+    position:absolute;
+    z-index:0;
+}
+ 
+.carrusel>div {
+    float: left;
+    height: 203px;
+    margin-right: 5px;
+    width: 195px;
+    text-align:center;
+}
+ 
+.carrusel img {
+    cursor:pointer;
+}
+ 
+.product {
+    border:#CCCCCC 1px solid;
+}
