@@ -30,171 +30,578 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="./img/icon-sm-2.png" type="image/x-icon">
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-<script>
-var current = 0;
-var imagenes = new Array();
- 
-$(document).ready(function() {
-    var numImages = 6;
-    if (numImages <= 3) {
-        $('.right-arrow').css('display', 'none');
-        $('.left-arrow').css('display', 'none');
-    }
- 
-    $('.left-arrow').on('click',function() {
-        if (current > 0) {
-            current = current - 1;
-        } else {
-            current = numImages - 3;
-        }
- 
-        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
- 
-        return false;
-    });
- 
-    $('.left-arrow').on('hover', function() {
-        $(this).css('opacity','0.5');
-    }, function() {
-        $(this).css('opacity','1');
-    });
- 
-    $('.right-arrow').on('hover', function() {
-        $(this).css('opacity','0.5');
-    }, function() {
-        $(this).css('opacity','1');
-    });
- 
-    $('.right-arrow').on('click', function() {
-        if (numImages > current + 3) {
-            current = current+1;
-        } else {
-            current = 0;
-        }
- 
-        $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
- 
-        return false;
-    }); 
- });
-</script>
-    
+<!-- barra de navegacion -->
+<section id="NavBar">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a href="./index.html"><img class="navbar-icon-lg" src="./img/icon-lg-2.png" alt="p2g Icon"></a>
+        <a href="./index.html"><img class="navbar-icon-sm" src="./img/icon-sm-2.png" alt="p2g Icon"></a>
+        <a class="navbar-brand" href="./index.html">Paw2Go!</a>
+        <div class="burger">
+            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <div><a class="dropdown-item" href="#"><i class="fas fa-dog"></i>  Dog Grooming</a></div>
+                        <div><a class="dropdown-item" href="#"><i class="fas fa-cat"></i>  Cat Grooming</a></div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pet Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</section>
+
+  <!-- principal imagen -->
+
+  <div class="imagenprincipal">
+    <img src="/img/Petshopprincipal.png" alt="..." class="responsive" width="80%" height="350">
+
+  </div>
 
 
-    
-    
+  <!-- -------------------------botones del principio -->
+  <div class="container-fluid">
+    <input type="radio" id="All" name="categories" value="All" checked>
+    <input type="radio" id="Health-&-wellness" name="categories" value="Health-&-wellness">
+    <input type="radio" id="Training-and-cleaning" name="categories" value="Training-and-cleaning">
+    <input type="radio" id="Home" name="categories" value="Home">
+    <input type="radio" id="Sand-and-accesories" name="categories" value="Sand-and-accesories">
+    <input type="radio" id="transporters-and-travel" name="categories" value="transporters-and-travel">
+    <input type="radio" id="Toys" name="categories" value="Toys">
+    <input type="radio" id="Grooming" name="categories" value="Grooming">
+    <input type="radio" id="Dental-care" name="categories" value="Dental-care">
+    <input type="radio" id="Necklaces-leashes-and-clothes" name="categories" value="Necklaces-leashes-and-clothes">
+    <input type="radio" id="Dry-food" name="categories" value="Dry-food">
+    <input type="radio" id="Wet-food" name="categories" value="Wet-food">
+    <input type="radio" id="Dog" name="categories" value="Dog">
+    <input type="radio" id="Cat" name="categories" value="Cat">
 
-    
-</head>
+    <ol class="filters">
+      <li>
+        <label for="All">All</label>
+      </li>
+      <li>
+        <label for="Cat">Cat</label>
+      </li>
+      <li>
+        <label for="Dog">Dog</label>
+      </li>
+      <li>
+        <label for="Health-&-wellness">Health & wellness</label>
+      </li>
+      <li>
+        <label for="Training-and-cleaning">Training and cleaning</label>
+      </li>
+      <li>
+        <label for="Home">Home</label>
+      </li>
+      <li>
+        <label for="Sand-and-accesories">Sand and accesories</label>
+      </li>
+      <li>
+        <label for="Transporters-and-travel">Transporters and travel</label>
+      </li>
+      <li>
+        <label for="Toys">Toys</label>
+      </li>
+      <li>
+        <label for="Grooming">Grooming</label>
+      </li>
+      <li>
+        <label for="Dental-care">Dental care</label>
+      </li>
+      <li>
+        <label for="Necklaces-leashes-and-clothes">Necklaces , leashes and clothes</label>
+      </li>
+      <li>
+        <label for="Dry-food">Dry food</label>
+      </li>
+      <li>
+        <label for="Wet-food">Wet food</label>
+      </li>
+     
+    </ol>
 
-<script src="js-shop-pet.js"></script>
-
-<body>
-    <!-- barra de navegacion -->
-    <section id="NavBar">
-        <nav class="navbar navbar-expand-lg navbar-dark ">
-            <a href="./index.html"><img class="navbar-icon-lg" src="./img/icon-lg-2.png" alt="p2g Icon"></a>
-            <a href="./index.html"><img class="navbar-icon-sm" src="./img/icon-sm-2.png" alt="p2g Icon"></a>
-            <a class="navbar-brand" href="./index.html">Paw2Go!</a>
-            <div class="burger">
-                <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <div><a class="dropdown-item" href="#"><i class="fas fa-dog"></i>  Dog Grooming</a></div>
-                            <div><a class="dropdown-item" href="#"><i class="fas fa-cat"></i>  Cat Grooming</a></div>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pet Shop</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </section>
-
-    <!-- imagen gattito -->
-                        
-<div class="container-fluid"
- style="margin-top: 35px;">
-    <div class="imageninicio">
-        <img src="/img/gatitopag.jpg" class="img-fluid" alt="..."style="width: 900px ; height: 350px;" >
-       
+    <div class="lineadivision">
+      <hr width=50% size=5>
     </div>
+
+    <!-- tarjetas de productos -->
+<div class="row">
+  
+</div>
+     <ol class="posts">
+      <li class="post" data-category="Health-&-wellness Dog Cat">
+        <article>
+          <figure>
+            <a href="" target="_blank">
+              <img src="/img/articulos de venta/para ambos/116475.png" alt="" style="display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;">
+                      </a>
+            <figcaption>
+              <ol class="post-categories">
+                <li>
+                  <a href="">Health & wellness</a>
+                </li>
+                <li>
+                  <a href="">Dog</a>
+                </li>
+                <li>
+                  <a href="">Cat</a>
+                </li>
+              </ol>
+              <h2 class="post-title">
+                <a href="" target="_blank">
+                </a>
+                descripcion prodtuc
+              </h2>
+              <a href="#" class="btn btn-light"> <span class="text">Add to car</span> <i
+                  class="fa fa-shopping-cart"></i> </a>
+            </figcaption>
+          </figure>
+        </article>
+      </li>
+
+      <li class="post" data-category="Health-&-wellness Dog Cat">
+        <article>
+          <figure>
+            <a href="" target="_blank">
+              <img src="/img/articulos de venta/para ambos/VetridermShampoo_1024x1024.jpg" alt="" style="display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;">
+            </a>
+            <figcaption>
+              <ol class="post-categories">
+                <li>
+                  <a href="">Health & wellness</a>
+                </li>
+                <li>
+                  <a href="">Dog</a>
+                </li>
+                <li>
+                  <a href="">Cat</a>
+                </li>
+              </ol>
+              <h2 class="post-title">
+                <a href="" target="_blank">
+                </a>
+                descripcion prodtuc
+              </h2>
+              <a href="#" class="btn btn-light"> <span class="text">Add to car</span> <i
+                  class="fa fa-shopping-cart"></i> </a>
+            </figcaption>
+          </figure>
+        </article>
+      </li>
+      <li class="post" data-category="Training-and-cleaning Cat">
+        <article>
+          <figure>
+            <a href="" target="_blank">
+              <img src="/img/articulos de venta/para gato/clean1.png" alt="" style="display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;">
+            </a>
+            <figcaption>
+              <ol class="post-categories">
+                <li>
+                  <a href="">Training and cleaning</a>
+                </li>
+                <li>
+                  <a href="">Cat</a>
+                </li>
+              </ol>
+              <h2 class="post-title">
+                <a href="" target="_blank">
+                </a>
+                descripcion prodtuc
+              </h2>
+              <a href="#" class="btn btn-light"> <span class="text">Add to car</span> <i
+                  class="fa fa-shopping-cart"></i> </a>
+            </figcaption>
+          </figure>
+        </article>
+      </li>
+      <li class="post" data-category="Training-and-cleaning Cat Dog">
+        <article>
+          <figure>
+            <a href="" target="_blank">
+              <img src="/img/articulos de venta/para gato/quitapelusa.png" alt="" style="display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;">
+            </a>
+            <figcaption>
+              <ol class="post-categories">
+                <li>
+                  <a href="">Training and cleaning</a>
+                </li>
+                <li>
+                  <a href="">Cat</a>
+                </li>
+                <li>
+                  <a href="">Dog</a>
+                </li>
+              </ol>
+              <h2 class="post-title">
+                <a href="" target="_blank">
+                </a>
+                descripcion prodtuc
+              </h2>
+              <a href="#" class="btn btn-light"> <span class="text">Add to car</span> <i
+                  class="fa fa-shopping-cart"></i> </a>
+            </figcaption>
+          </figure>
+        </article>
+      </li>
+
+
+
+
+
+      <li class="post" data-category="Wet-food Dog">
+        <article>
+          <figure>
+            <a href="" target="_blank">
+              <img src="/img/articulos de venta/para perro/comida lata.png" alt="" style="display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;">
+            </a>
+            <figcaption>
+              <ol class="post-categories">
+                <li>
+                  <a href="">Wet food</a>
+                </li>
+                <li>
+                  <a href="">Dog</a>
+                </li>
+              </ol>
+              <h2 class="post-title">
+                <a href="" target="_blank">
+                </a>
+                descripcion prodtuc
+              </h2>
+              <a href="#" class="btn btn-light"> <span class="text">Add to car</span> <i
+                  class="fa fa-shopping-cart"></i> </a>
+            </figcaption>
+          </figure>
+        </article>
+      </li>
+
+
+      <li class="post" data-category="Wet-food Dog">
+        <article>
+          <figure>
+            <a href="" target="_blank">
+              <img src="/img/articulos de venta/para perro/comida lata 2.jfif" alt="" style="display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;">
+            </a>
+            <figcaption>
+              <ol class="post-categories">
+                <li>
+                  <a href="">Wet food</a>
+                </li>
+                <li>
+                  <a href="">Dog</a>
+                </li>
+              </ol>
+              <h2 class="post-title">
+                <a href="" target="_blank">
+                </a>
+                descripcion prodtuc
+              </h2>
+              <a href="#" class="btn btn-light"> <span class="text">Add to car</span> <i
+                  class="fa fa-shopping-cart"></i> </a>
+            </figcaption>
+          </figure>
+        </article>
+      </li>
+
+      <li class="post" data-category="Wet-food Dog">
+        <article>
+          <figure>
+            <a href="" target="_blank">
+              <img src="/img/articulos de venta/para perro/comida lata 3.jfif" alt="" style="display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;">
+            </a>
+            <figcaption>
+              <ol class="post-categories">
+                <li>
+                  <a href="">Wet food</a>
+                </li>
+                <li>
+                  <a href="">Dog</a>
+                </li>
+              </ol>
+              <h2 class="post-title">
+                <a href="" target="_blank">
+                </a>
+                descripcion prodtuc
+              </h2>
+              <a href="#" class="btn btn-light"> <span class="text">Add to car</span> <i
+                  class="fa fa-shopping-cart"></i> </a>
+            </figcaption>
+          </figure>
+        </article>
+      </li>
+
+      <li class="post" data-category="Wet-food Cat">
+        <article>
+          <figure>
+            <a href="" target="_blank">
+              <img src="/img/articulos de venta/para gato/wetfood-cat.jfif" alt="" style="display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;">
+            </a>
+            <figcaption>
+              <ol class="post-categories">
+                <li>
+                  <a href="">wet food</a>
+                </li>
+                <li>
+                  <a href="">Cat</a>
+                </li>
+              </ol>
+              <h2 class="post-title">
+                <a href="" target="_blank">
+                </a>
+                descripcion prodtuc
+              </h2>
+              <a href="#" class="btn btn-light"> <span class="text">Add to car</span> <i
+                  class="fa fa-shopping-cart"></i> </a>
+            </figcaption>
+          </figure>
+        </article>
+      </li>
+
+      <li class="post" data-category="Wet-food Cat">
+        <article>
+          <figure>
+            <a href="" target="_blank">
+              <img src="/img/articulos de venta/para gato/wet-food3.jpg" alt="" style="display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;">
+            </a>
+            <figcaption>
+              <ol class="post-categories">
+                <li>
+                  <a href="">Wet food</a>
+                </li>
+                <li>
+                  <a href="">Cat</a>
+                </li>
+              </ol>
+              <h2 class="post-title">
+                <a href="" target="_blank">
+                </a>
+                descripcion prodtuc
+              </h2>
+              <a href="#" class="btn btn-light"> <span class="text">Add to car</span> <i
+                class="fa fa-shopping-cart"></i> </a>
+            </figcaption>
+          </figure>
+        </article>
+      </li> 
+
+      <li class="post" data-category="Home Cat">
+        <article>
+          <figure>
+            <a href="" target="_blank">
+              <img src="/img/articulos de venta/para gato/homecat.jfif" alt="" style="display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;">
+            </a>
+            <figcaption>
+              <ol class="post-categories">
+                <li>
+                  <a href="">Home</a>
+                </li>
+                <li>
+                  <a href="">Cat</a>
+                </li>
+             </ol>
+              <h2 class="post-title">
+                <a href="" target="_blank">
+                </a>
+                descripcion prodtuc
+              </h2>
+              <a href="#" class="btn btn-light"> <span class="text">Add to car</span> <i
+                class="fa fa-shopping-cart"></i> </a>
+            </figcaption>
+          </figure>
+        </article>
+      </li> 
+      <li class="post" data-category="Home Cat">
+        <article>
+          <figure>
+            <a href="" target="_blank">
+              <img src="/img/articulos de venta/para gato/homecat2.jfif" alt="" style="display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;">
+            </a>
+            <figcaption>
+              <ol class="post-categories">
+                <li>
+                  <a href="">Home</a>
+                </li>
+                <li>
+                  <a href="">Cat</a>
+                </li>
+             </ol>
+              <h2 class="post-title">
+                <a href="" target="_blank">
+                </a>
+                descripcion prodtuc
+              </h2>
+              <a href="#" class="btn btn-light"> <span class="text">Add to car</span> <i
+                class="fa fa-shopping-cart"></i> </a>
+            </figcaption>
+          </figure>
+        </article>
+      </li> 
+
+      <li class="post" data-category="Home Cat Dog">
+        <article>
+          <figure>
+            <a href="" target="_blank">
+              <img src="/img/articulos de venta/para ambos/drinkwell-home.jpg" alt="" style="display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;">
+            </a>
+            <figcaption>
+              <ol class="post-categories">
+                <li>
+                  <a href="">Home</a>
+                </li>
+                <li>
+                  <a href="">Cat</a>
+                </li>
+                <li>
+                  <a href="">Cat</a>
+                </li>
+             </ol>
+              <h2 class="post-title">
+                <a href="" target="_blank">
+                </a>
+                descripcion prodtuc
+              </h2>
+              <a href="#" class="btn btn-light"> <span class="text">Add to car</span> <i
+                class="fa fa-shopping-cart"></i> </a>
+            </figcaption>
+          </figure>
+        </article>
+      </li> 
+
+      <li class="post" data-category="Sand-and-accesories">
+        <article>
+          <figure>
+            <a href="" target="_blank">
+              <img src="/img/articulos de venta/para gato/perlas-silice-gato-arena-magic-clean.jpg" alt="" style="display: block;
+                      margin-left: auto;
+                      margin-right: auto;
+                      width: 50%;">
+            </a>
+            <figcaption>
+              <ol class="post-categories">
+                <li>
+                  <a href="">Sand and accesories</a>
+                </li>
+              <li>
+                  <a href="">Cat</a>
+                </li>
+             </ol>
+              <h2 class="post-title">
+                <a href="" target="_blank">
+                </a>
+                descripcion prodtuc
+              </h2>
+              <a href="#" class="btn btn-light"> <span class="text">Add to car</span> <i
+                class="fa fa-shopping-cart"></i> </a>
+            </figcaption>
+          </figure>
+        </article>
+      </li> 
+
 </div>
 
-<!-- CARRUSEL PRODUCTOS -->
-<div id="carrusel" style="float:right; ">
-    <a href="#" class="left-arrow"><img src="images/left-arrow.png" /></a>
-    <a href="#" class="right-arrow"><img src="images/right-arrow.png" /></a>
-    <div class="carrusel">
-        <div class="product" id="product_0">
-            <img src="gallery/01.jpg" width="195" height="100" />
-            <h5>Salud y  bienestar</h5>
-            
-        </div>
-        <div class="product" id="product_1">
-            <img src="gallery/02.jpg" width="195" height="100" />
-            <h5>Entrenamiento y Limpieza</h5>
-           
-        </div>
-        <div class="product" id="product_2">
-            <img src="gallery/03.jpg" width="195" height="100" />
-            <h5>Hogar</h5>
-           
-        </div>
-        <div class="product" id="product_3">
-            <img src="gallery/01.jpg" width="195" height="100" />
-            <h5>Arena y accesorios</h5>
-            
-        </div>
-        <div class="product" id="product_4">
-            <img src="gallery/02.jpg" width="195" height="100" />
-            <h5>juguetes</h5>
-            
-        </div>
-        <div class="product" id="product_5">
-            <img src="gallery/03.jpg" width="195" height="100" />
-            <h5>Grooming</h5>
-            
-        </div>
-        <div class="product" id="product_6">
-            <img src="gallery/03.jpg" width="195" height="100" />
-            <h5>Cuidado dental</h5>
-            
-        </div>
-        <div class="product" id="product_7">
-            <img src="gallery/03.jpg" width="195" height="100" />
-            <h5>Collares , Correas y ropa </h5>
-            
-        </div>
-        <div class="product" id="product_8">
-            <img src="gallery/03.jpg" width="195" height="100" />
-            <h5>Alimento seco</h5>
-            
-        </div>
-        <div class="product" id="product_9>
-            <img src="gallery/03.jpg" width="195" height="100" />
-            <h5>Alimento Humedo</h5>
-            </div>
-        </div>
-</div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      <!--Footer-->
+    
+        <!--Footer-->
+        
+          <footer id="footer">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-2x footer-icon"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x footer-icon"></i></a>
+            <a href="https://wa.me/+52331462531" target="_blank"><i class="fab fa-whatsapp fa-2x footer-icon"></i></a>
+            <a href="mailto: abc@example.com/" target="_blank"><i class="fas fa-envelope fa-2x footer-icon"></i></a>
+            <p>© Copyright 2021 Paw2Go!</p>
+        </footer>
+
+      
+ 
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
 
 
 

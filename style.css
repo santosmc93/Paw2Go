@@ -520,3 +520,249 @@
         font-weight: 900;
     }
 }
+
+
+
+/* Style pet/shop */
+/* imagen inicio */
+.responsive{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+
+}
+
+/* linea de division */
+.lineadivision{
+ background-color: #a61312;
+}
+
+
+
+
+/* botones de el principio */
+
+/* RESET RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+  --black: #3a3a3a;
+  --white: #fff;
+  --red: #a61312;
+}
+
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 a {
+  transition: all 0.1s;
+}
+
+h1 a:hover {
+  background: var(--red);
+  color: var(--white);
+}
+
+input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+
+
+/* FILTERS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.filters {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.filters * {
+  display: inline-block;
+}
+
+.filters label {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.25rem;
+  border-radius: 2rem;
+  min-width: 50px;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.filters label:hover {
+  background: var(--red);
+  color: var(--white);
+}
+
+
+/* FILTERED ELEMENTS (POSTS)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.posts {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.posts .post {
+  background: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.posts .post-title {
+  font-size: 1.3rem;
+}
+
+.posts .post-title:hover {
+  text-decoration: underline;
+}
+
+.posts figcaption {
+  padding: 1rem;
+}
+
+.posts .post-categories {
+  margin-bottom: 0.75rem;
+  font-size: 0.75rem;
+}
+
+.posts .post-categories * {
+  display: inline-block;
+}
+
+.posts .post-categories li {
+  margin-bottom: 0.2rem;
+}
+
+.posts .post-categories a {
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid;
+  line-height: normal;
+  transition: all 0.1s;
+}
+
+.posts .post-categories a:hover {
+  background: var(--red);
+  color: var(--white);
+}
+
+
+/* FILTERING RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+[value="All"]:checked ~ .filters [for="All"],
+[value="Health-&-wellness"]:checked ~ .filters [for="Health-&-wellness"],
+[value="Training-and-cleaning"]:checked ~ .filters [for="Training-and-cleaning"],
+[value="Home"]:checked ~ .filters [for="Home"],
+[value="Sand-and-accesories"]:checked ~ .filters [for="Sand-and-accesories"],
+[value="Transporters-and-travel"]:checked ~ .filters [for="Transporters-and-travel"],
+[value="Toys"]:checked ~ .filters [for="Toys"],
+[value="Grooming"]:checked ~ .filters [for="Grooming"] 
+[value="Dental care"]:checked ~ .filters [for="Dental care"],
+[value="Necklaces-leashes-and-clothes"]:checked ~ .filters [for="Necklaces-leashes-and-clothes"],
+[value="Dry-food"]:checked ~ .filters [for="Dry-food"] ,
+[value="Wet-food"]:checked ~ .filters [for="Wet-food"],
+[value="Dog"]:checked ~ .filters [for="Dog"],
+[value="Cat"]:checked ~ .filters [for="Cat"]{
+  background: var(--red);
+  color: var(--white);
+}
+
+[value="All"]:checked ~ .posts [data-category] {
+  display: block;
+}
+
+[value="Health-&-wellness"]:checked ~ .posts .post:not([data-category~="Health-&-wellness"]),
+[value="Training-and-cleaning"]:checked ~ .posts .post:not([data-category~="Training-and-cleaning"]),
+[value="Home"]:checked ~ .posts .post:not([data-category~="Home"]),
+[value="Sand-and-accesories"]:checked ~ .posts .post:not([data-category~="Sand-and-accesories"]),
+[value="Transporters-and-travel"]:checked ~ .posts .post:not([data-category~="Transporters-and-travel"]),
+[value="Toys"]:checked ~ .posts .post:not([data-category~="Toys"]),
+[value="Grooming"]:checked ~ .posts .post:not([data-category~="Grooming"]),
+[value="Dental-care"]:checked ~ .posts .post:not([data-category~="Dental care"]),
+[value="Necklaces-leashes-and-clothes"]:checked ~ .posts .post:not([data-category~="Necklaces-leashes-and-clothes"]),
+[value="Dry-food"]:checked ~ .posts .post:not([data-category~="Dry-food"]),
+[value="Wet-food"]:checked ~ .posts .post:not([data-category~="Wet-food"]),
+[value="Dog"]:checked ~ .posts .post:not([data-category~="Dog"]),
+[value="Cat"]:checked ~ .posts .post:not([data-category~="Cat"]) {
+  display: none;
+}
+
+
+/* Style cards */
+.column {
+  float: left;
+  width: 20%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+/* Style the counter cards */
+.post {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+
+/*/ /boton buy */
+.btn{
+  background-color: #a61312;
+  color: #fafafa;
+  float: right;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
