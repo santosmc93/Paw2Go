@@ -520,3 +520,224 @@
         font-weight: 900;
     }
 }
+
+/*About US*/
+#meetus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fdf7e6;
+}
+
+#ourteam {
+  background-color: #fdf7e6;
+  padding: 2rem 0;
+}
+
+#ourteam h1{
+  margin: 0;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #a61312 !important;
+  text-align: center;
+  letter-spacing: 0.4rem;
+}
+
+.meet {
+  position: relative;
+  width: 1280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cards {
+  position: relative;
+  width: 300px;
+  min-height: 400px;
+  overflow: hidden;
+  margin: 10px;
+  background: #333;
+  background: linear-gradient(#a61312 0%, #a61312 30%, #eae1c7 30%, #eae1c7 100%);
+  border-radius: 10px;
+}
+
+.cards .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  z-index: 10;
+  border-radius: 10px;
+  overflow: hidden;
+  transform-origin: top;
+
+}
+
+.cards:hover .imgBx {
+  transform: translateY(30px) scale(0.5);
+}
+
+.cards .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.cards .content {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  transition: 0.5s;
+  padding-bottom: 30px;
+  transform: translateY(100%);
+}
+
+.cards:hover .content {
+  transform: translateY(0);
+}
+
+.cards .content .details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.video-meet {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: -5%;
+}
+
+.cover-meet {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: rgba(255, 255, 255, 1);  
+  backdrop-filter: blur(2px);
+  top: -5%;
+}
+
+
+.cards .content .details h2 {
+  color: #ffffffe8;
+  line-height: 1.8rem;
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.title-about{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #a61312;
+}
+
+.cards .content .details h2 span {
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #fff;
+  background-color: #a61312;
+}
+
+.sci {
+  position: relative;
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  padding: 0;
+}
+
+.sci li {
+  list-style: none;
+  margin: 4px;
+}
+
+.sci li a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  background: #a61312;
+  font-size: 1.5em;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.sci li a:hover {
+  background: #d56756;
+  transform: rotate(360deg);
+}
+
+.text-about {
+  background: #ce6757;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-about p{
+  justify-content:center;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.bold-about {
+  color: #fff;
+  padding: 1rem;
+}
+
+.container-aboutus {
+  background-color: #fdf7e6;
+}
+.right-about {
+  background: #ecececaf;
+  padding: 2rem;
+  font-weight: 700;
+}
+
+.right-about p{
+  margin: 0;
+}
+
+.about-row {
+  display: flex;
+  justify-content: center;
+  padding-top: 2.5rem;
+}
+
+@media only screen and (max-width: 960px ) {
+  .meet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
