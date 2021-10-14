@@ -771,7 +771,7 @@
 
 /*MODAL PERRO Y GATO*/
 
-.modal{
+.modalDog{
   position: fixed;
   top: 0;
   left: 0;
@@ -784,14 +784,23 @@
   transition: opacity .6s .9s;
   --transform: translateY(-200vh);
   --transition: transform .8s;
+  z-index: 5;
 }
 
-.modal--show{
-  opacity: 1;
-  pointer-events: unset;
-  transition: opacity .6s;
-  --transform: translateY(0);
-  --transition: transform .8s .8s;
+.modalCat{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111111bd;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s .9s;
+  --transform: translateY(-200vh);
+  --transition: transform .8s;
+  z-index: 5;
 }
 
 .modal__container{
@@ -810,6 +819,23 @@
   transition:var(--transition);
 }
 
+.modalDog--show{
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity .6s;
+  --transform: translateY(0);
+  --transition: transform .8s .8s;
+}
+
+.modalCat--show{
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity .6s;
+  --transform: translateY(0);
+  --transition: transform .8s .8s;
+}
+
+
 .modal__title{
   font-size: 3rem;
   margin-bottom: 0px;
@@ -820,7 +846,7 @@
   margin-top: 50px;
 }
 
-.modal__close{
+.modalDog__close{
   text-decoration: none;
   color: #fff;
   background-color: #F26250;
@@ -833,8 +859,24 @@
   margin-left: 90%;
  
 }
-
-.modal__close:hover{
+.modalCat__close{
+  text-decoration: none;
+  color: #fff;
+  background-color: #F26250;
+  padding: 0.5em 1em;
+  border: 1px solid ;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 300;
+  transition: background-color .3s;
+  margin-left: 90%;
+ 
+}
+.modalDog__close:hover{
+  color: #F26250;
+  background-color: #fff;
+}
+.modalCat__close:hover{
   color: #F26250;
   background-color: #fff;
 }

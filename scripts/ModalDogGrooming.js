@@ -1,14 +1,14 @@
-const openDogModal = document.querySelector('.hero__cta');
-const modalD = document.querySelector('.modal');
-const closeDogModal = document.querySelector('.modal__close');
+const openDogModal = document.querySelector('.Dog__cta');
+const modalDog = document.querySelector('.modalDog');
+const closeDogModal = document.querySelector('.modalDog__close');
 
 openDogModal.addEventListener('click', (e)=>{
     e.preventDefault();
-    modalD.classList.add('modal--show');
+    modalDog.classList.add('modalDog--show');
 });
 
 closeDogModal.addEventListener('click', (e)=>{
     e.preventDefault();
-    modalD.classList.remove('modal--show');
+    modalDog.classList.remove('modalDog--show');
 });
 

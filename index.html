@@ -51,8 +51,8 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <div><a class="dropdown-item hero__cta" href="#"><i class="fas fa-dog"></i>  Dog Grooming</a></div>
-                            <div><a class="dropdown-item hero__cta" href="#"><i class="fas fa-cat"></i>  Cat Grooming</a></div>
+                            <div><a class="dropdown-item Dog__cta" href="#"><i class="fas fa-dog"></i>  Dog Grooming</a></div>
+                            <div><a class="dropdown-item Cat__cta" href="#"><i class="fas fa-cat"></i>  Cat Grooming</a></div>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -192,9 +192,9 @@
     <!--================    MODAL PERRO Y GATO      ===========-->
     
     <!-- MODAL PERRO -->
-    <section class="modal">
+    <section class="modalDog">
         <div class="modal__container">
-            <a href="#" class="modal__close">X</a>
+            <a href="#" class="modalDog__close">X</a>
             
             <h2 class="modal__title navbar-brand">Dog Grooming!</h2>
             <span>
@@ -202,12 +202,12 @@
             </span>
             <p class="modal__paragraph"></p>
             
-                    <input class="formulary-label" type="text" name="Name" placeholder="Pet´s Name" required>
+                    <input class="formulary-label" type="text" name="Name" placeholder="Dog´s Name" required>
                 
                 
                     <input class="formulary-label" type="text" name="Name" placeholder="Breed" required>
                
-                    <input class="formulary-label" type="text" name="Name" placeholder="Pet´s Age" required>
+                    <input class="formulary-label" type="text" name="Name" placeholder="Dog´s Age" required>
                 
                     <input class="formulary-label" type="datetime-local" name="" id="">
                 
@@ -219,12 +219,29 @@
     </section>
 
     <!-- MODAL GATO-->
-    <section class="modal">
+    <section class="modalCat">
         <div class="modal__container">
-            <img src="images/modal.svg" class="modal__img">
-            <h2 class="modal__title">¡Bienvenido al sitio!</h2>
-            <p class="modal__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nobis nisi quibusdam doloremque expedita quae ipsam accusamus quisquam quas, culpa tempora. Veniam consectetur deleniti maxime.</p>
-            <a href="#" class="modal__close">Cerrar Modal</a>
+            <a href="#" class="modalCat__close">X</a>
+            
+            <h2 class="modal__title navbar-brand">Cat Grooming!</h2>
+            <span>
+                <i class="fas fa-cat iconGrooming navbar-brand"></i>
+            </span>
+            <p class="modal__paragraph"></p>
+            
+                    <input class="formulary-label" type="text" name="Name" placeholder="Cat´s Name" required>
+                
+                
+                    <input class="formulary-label" type="text" name="Name" placeholder="Breed" required>
+               
+                    <input class="formulary-label" type="text" name="Name" placeholder="Cat´s Age" required>
+                
+                    <input class="formulary-label" type="datetime-local" name="" id="">
+                
+            <p class="modal__paragraph">Aditional Instruccions:</p>
+            <textarea class="textboxGrooming" name="textGrooming" id="" cols="30" rows="4"></textarea>
+            
+            <input class="SubmitButton" type="button" name="submit" value="SUBMIT">
         </div>
     </section>
     
@@ -232,6 +249,7 @@
     <!--Script VENTANA MODAL PERRO Y GATO-->
     <script src="./scripts/ModalDogGrooming.js"></script>
     <script src="./scripts/ModalCatGrooming.js"></script>
+
     <!--Footer-->
     <footer id="footer">
         <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-2x footer-icon"></i></a>
