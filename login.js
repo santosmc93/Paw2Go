@@ -1,26 +1,19 @@
-var objPeople = [
-	{
-		username: 'whoistheboss',
-		password: 'imtheboss'
-	},
-	{
-		username: 'whoisnottheboss',
-		password: 'imnottheboss'
-	}
+const loginText = document.querySelector(".title-text .login");
+       const loginForm = document.querySelector("form.login");
+       const loginBtn = document.querySelector("label.login");
+       const signupBtn = document.querySelector("label.signup");
+       const signupLink = document.querySelector("form .signup-link a");
+       signupBtn.onclick = (()=>{
+         loginForm.style.marginLeft = "-50%";
+         loginText.style.marginLeft = "-50%";
+       });
+       loginBtn.onclick = (()=>{
+         loginForm.style.marginLeft = "0%";
+         loginText.style.marginLeft = "0%";
+       });
+       signupLink.onclick = (()=>{
+         signupBtn.click();
+         return false;
+       });
 
-]
-
-// login functionality
-function login() {
-	var username = document.getElementById('username').value
-	var password = document.getElementById('password').value
-
-	for(var i = 0; i < objPeople.length; i++) {
-		if(username == objPeople[i].username && password == objPeople[i].password) {
-			alert(username + ' is logged in!!!')
-			break
-		} else {
-			alert('incorrect username or password')
-		}
-	}
-}
+			 

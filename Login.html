@@ -29,34 +29,73 @@
 
 </head>
 
-<body>
-<body id="body1" style="background-image: url(/img/suitDoog.jpg)">
-
-    <!-- Login -->    
-    <form class="formulario">
-        <h1 class="title">Login</h1>
-        <img src="/img/adminkey.png" id = "key" alt="">
-         <div class="contenedor">
-
-             <div class="input-contenedor">
-                <i class="fas fa-user-tie icon"></i>
-             <input type="text" placeholder="Username" id="username">
-             
-             </div>
-             
-             <div class="input-contenedor">
-            <i class="fas fa-key icon"></i>
-             <input type="password" placeholder="Password" id="password">
-             
-             </div>
-             <!--<input type="submit" value="Login" class="button"> -->
-             <button type="button"class="button" onclick="login()">Login</button>
-             <p> <a class="link" href="#">Forgot your password? </a></p>
-             
-         </div>
-        </form>
+<body id="body1" style="background-image: url(/img/suitDoog.jpg);">
+    <div class="singForm">
+       <div class="title-text">
+          <div class="title login"><b>
+             Login</b>
+          </div>
+          <div class="title signup"><b>
+             Register</b>
+          </div>
+       </div>
+   
+       <img src="/img/adminkey.png" id = "key" alt="">
+       <div class="form-container">
+          <div class="slide-controls">
+             <input type="radio" name="slide" id="login" checked>
+             <input type="radio" name="slide" id="signup">
+             <label for="login" class="slide login">Login</label>
+             <label for="signup" class="slide signup">Register</label>
+             <div class="slider-tab"></div>
+          </div>
+          <div class="form-inner">
+             <form action="#" class="login">
+                <div class="field">
+                    <i class="fas fa-user-tie icon"></i>
+                   <input type="text" placeholder="User Name" required>
+                </div>
+                <div class="field">
+                    <i class="fas fa-key icon"></i>
+                   <input type="password" placeholder="Password" required>
+                </div>
+                <div class="pass-link">
+                   <a href="#"></a>
+                </div>
+                <div class="field btn">
+                   <div class="btn-layer"></div>
+                   <input type="submit" value="Login">
+                </div>
+                <div class="signup-link">
+                   New User <a href=""> Register</a>
+                </div>
+             </form>
+             <form action="#" class="signup">
+                <div class="field">
+                    <i class="fas fa-user-tie icon"></i>
+                   <input type="text" placeholder="Username" required>
+                </div>
+                <div class="field">
+                    <i class="fas fa-envelope icon"></i>
+                   <input type="text" placeholder="Email Address" required>
+                </div>
+                <div class="field">
+                    <i class="fas fa-key icon"></i>
+                   <input type="password" placeholder="Password" required>
+                </div>
+                <div class="field">
+                    <i class="fas fa-key icon"></i>
+                   <input type="password" placeholder="Confirm password" required>
+                </div>
+                <div class="field btn">
+                   <div class="btn-layer"></div>
+                   <input type="submit" value="Register">
+                </div>
+             </form>
+          </div>
+       </div>
+    </div>
     
-
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -69,6 +108,4 @@
         crossorigin="anonymous"></script>
         <script src="login.js"></script>
     </body>
-</body>
-
 </html>
