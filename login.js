@@ -49,7 +49,7 @@ function crear(){
       
       // alert que se creo la cuenta y se dirije a otra pagina 
       alert("You have sucesfully created a account");
-      window.Location.href ="./contact.html";
+      window.location.href ="/loginOwner.html";
       
       // se incrementa el contador  de usuarios y se actualiza 
       i++;
