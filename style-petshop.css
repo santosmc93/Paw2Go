@@ -222,7 +222,7 @@
   [value="Transporters-and-travel"]:checked ~ .filters [for="Transporters-and-travel"],
   [value="Toys"]:checked ~ .filters [for="Toys"],
   [value="Grooming"]:checked ~ .filters [for="Grooming"] 
-  [value="Dental care"]:checked ~ .filters [for="Dental care"],
+  [value="Dental-care"]:checked ~ .filters [for="Dental-care"],
   [value="Necklaces-leashes-and-clothes"]:checked ~ .filters [for="Necklaces-leashes-and-clothes"],
   [value="Dry-food"]:checked ~ .filters [for="Dry-food"] ,
   [value="Wet-food"]:checked ~ .filters [for="Wet-food"],
@@ -243,7 +243,7 @@
   [value="Transporters-and-travel"]:checked ~ .posts .post:not([data-category~="Transporters-and-travel"]),
   [value="Toys"]:checked ~ .posts .post:not([data-category~="Toys"]),
   [value="Grooming"]:checked ~ .posts .post:not([data-category~="Grooming"]),
-  [value="Dental-care"]:checked ~ .posts .post:not([data-category~="Dental care"]),
+  [value="Dental-care"]:checked ~ .posts .post:not([data-category~="Dental-care"]),
   [value="Necklaces-leashes-and-clothes"]:checked ~ .posts .post:not([data-category~="Necklaces-leashes-and-clothes"]),
   [value="Dry-food"]:checked ~ .posts .post:not([data-category~="Dry-food"]),
   [value="Wet-food"]:checked ~ .posts .post:not([data-category~="Wet-food"]),
