@@ -29,7 +29,11 @@
 
 </head>
 
-<body id="body1" style="background-image: url(/img/suitDoog.jpg);">
+<body id="body1" style="background-image: url(/img/suitDoog.jpg); display: grid;
+height: 100%;
+width: 100%;
+place-items: center;
+margin-top:  5%;">
     <div class="singForm">
        <div class="title-text">
           <div class="title login"><b>
@@ -53,18 +57,18 @@
              <form action="#" class="login">
                 <div class="field">
                     <i class="fas fa-user-tie icon"></i>
-                   <input type="text" placeholder="User Name" required>
+                   <input type="text" placeholder="User Name" required id= "Username">
                 </div>
                 <div class="field">
                     <i class="fas fa-key icon"></i>
-                   <input type="password" placeholder="Password" required>
+                   <input type="password" placeholder="Password" required id="password">
                 </div>
                 <div class="pass-link">
                    <a href="#"></a>
                 </div>
                 <div class="field btn">
                    <div class="btn-layer"></div>
-                   <input type="submit" value="Login">
+                   <input type="submit" value="Login" id="LOGIN">
                 </div>
                 <div class="signup-link">
                    New User <a href=""> Register</a>
@@ -73,23 +77,23 @@
              <form action="#" class="signup">
                 <div class="field">
                     <i class="fas fa-user-tie icon"></i>
-                   <input type="text" placeholder="Username" required>
+                   <input type="text" placeholder="Username" required id="Username1">
                 </div>
                 <div class="field">
                     <i class="fas fa-envelope icon"></i>
-                   <input type="text" placeholder="Email Address" required>
+                   <input type="text" placeholder="Email Address" required id="email">
                 </div>
                 <div class="field">
                     <i class="fas fa-key icon"></i>
-                   <input type="password" placeholder="Password" required>
+                   <input type="password" placeholder="Password" required id="password1">
                 </div>
                 <div class="field">
                     <i class="fas fa-key icon"></i>
-                   <input type="password" placeholder="Confirm password" required>
+                   <input type="password" placeholder="Confirm password" required id="password2">
                 </div>
                 <div class="field btn">
                    <div class="btn-layer"></div>
-                   <input type="submit" value="Register">
+                   <input type="submit" value="Register" id="registrar">
                 </div>
              </form>
           </div>
@@ -107,5 +111,6 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
         <script src="login.js"></script>
+        <script src="design.js"></script>
     </body>
 </html>
