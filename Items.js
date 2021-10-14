@@ -1,5 +1,5 @@
 class Articulo {
-    constructor(nombre, descripcion, imagen,precio){
+    constructor(nombre, descripcion, imagen, precio){
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.imagen = imagen;
@@ -8,7 +8,7 @@ class Articulo {
 }
 
 let boton = document.getElementById("boton");
-let botonMostrar=document.getElementById("boton-mostrar");
+let botonMostrar = document.getElementById("boton-mostrar");
 
 let articulosArray = [];
 
