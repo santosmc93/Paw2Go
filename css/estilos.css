@@ -14,7 +14,7 @@ body{
     background-attachment: fixed;
 }
 
-main{
+.main{
     width: 100%;
     padding: 20px;
     margin: auto;
@@ -26,6 +26,7 @@ main{
     max-width: 800px;
     margin: auto;
     position: relative;
+    margin-bottom: 8%;
 }
 
 .box-back{
@@ -35,7 +36,7 @@ main{
     justify-content: center;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: rgba(192, 24, 24, 0.5);
+    background-color: #eae1c7ce ;
 
 }
 
@@ -74,7 +75,7 @@ main{
 }
 
 .box-back button:hover{
-    background: #fff;
+    background: #ff5137;
     color: black;
 }
 
@@ -105,7 +106,7 @@ main{
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
-    color: crimson;
+    color: #a61312;
 }
 
 .container-login-signup form input{
@@ -123,7 +124,7 @@ main{
     margin-top: 40px;
     border: none;
     font-size: 14px;
-    background: crimson;
+    background: #a61312;
     font-weight: 600;
     cursor: pointer;
     color: white;
