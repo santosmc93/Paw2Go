@@ -784,7 +784,7 @@
   transition: opacity .6s .9s;
   --transform: translateY(-200vh);
   --transition: transform .8s;
-  z-index: 5;
+  z-index: 1000;
 }
 
 .modalCat{
@@ -800,7 +800,7 @@
   transition: opacity .6s .9s;
   --transform: translateY(-200vh);
   --transition: transform .8s;
-  z-index: 5;
+  z-index: 1000;
 }
 
 .modal__container{
@@ -904,4 +904,34 @@
   max-height: 200px;
 }
 
+/*Perro y Gato Iconos*/
+#icon {
+  font-size: 180px;
+  color: #a61312;
+  background-color: #eae1c7;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 13rem;
+  height: 13rem;
+}
+.row{
+  margin: auto 23%;
+}
 
+#TellUs { 
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: 'Luckiest Guy', cursive;
+  color: #a61312;
+}
+
+.hoverIcons:hover{
+  background-color: #060302;
+  border-radius: 50%;
+}
+
+.positionIcons{
+  text-align: center;
+}
