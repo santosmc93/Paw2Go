@@ -785,7 +785,7 @@
   transition: opacity .6s .9s;
   --transform: translateY(-200vh);
   --transition: transform .8s;
-  z-index: 5;
+  z-index: 1000;
 }
 
 .modalCat{
@@ -801,7 +801,7 @@
   transition: opacity .6s .9s;
   --transform: translateY(-200vh);
   --transition: transform .8s;
-  z-index: 5;
+  z-index: 1000;
 }
 
 .modal__container{
