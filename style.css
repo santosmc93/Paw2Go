@@ -535,6 +535,7 @@
       column-gap: 10px;
     }
 }
+
 .campo{
   
   margin-bottom: 15px;
@@ -558,7 +559,6 @@
     }
 }
 
-
 .botones button {
   position: relative;
   cursor: pointer;
@@ -575,7 +575,7 @@
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 1100px;
+  height: 1400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -620,6 +620,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+@media (min-width: 768px) {
+    .gato-perro{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    } 
+
+  }
+  .gato-perro .campo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    
+  }
+
+  .gato-perro {
+    border-top: 2px solid #fff;
   }
 
 /********************* Ingreso de nuevos Objetos **********************/

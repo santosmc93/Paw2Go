@@ -1,9 +1,12 @@
 class Articulo {
-    constructor(nombre, descripcion, imagen, precio){
+    constructor(nombre, descripcion, imagen, precio, categorias = [], gato, perro){
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.imagen = imagen;
         this.precio = precio;
+        this.categorias = categorias;
+        this.gato = gato;
+        this.perro = perro;
     }
 }
 
@@ -19,12 +22,36 @@ boton.addEventListener("click", function enviar(e){
     let descripcion = document.getElementById("descripcion").value;
     let imagen = document.getElementById("link").value;
     let precio = document.getElementById("precio").value;
+    let gato = document.getElementById("gato").checked;
+    let perro = document.getElementById("perro").checked;
 
-    let articulo = new Articulo(nombre,descripcion,imagen,precio);
+    if(nombre == "" || descripcion == "" || precio == "" || imagen == ""){
+        alert("All fields are mandatory");
+    }else {
+        if(gato == false && perro == false){
+            alert("Please, choose an option: Cat or Dog");
+        } else {
+
+    let articulo = new Articulo(nombre,descripcion,imagen,precio,
+        [document.getElementById("HyW").checked,
+         document.getElementById("TyC").checked,
+         document.getElementById("Home").checked,
+         document.getElementById("SandA").checked,
+         document.getElementById("TandT").checked,
+         document.getElementById("Toys").checked,
+         document.getElementById("Grooming").checked,
+         document.getElementById("Dental").checked,
+         document.getElementById("NandC").checked,
+         document.getElementById("DryFood").checked,
+         document.getElementById("WetFood").checked,
+         ], gato, perro);
+
     articulosArray.push(articulo);
     let articuloJson = JSON.stringify(articulosArray);
 
     localStorage.setItem("articulos", articuloJson);
+        }
+    }
     //localStorage.setItem("descripcion", articulo.descripcion);
     //localStorage.setItem("imagen", articulo.imagen);
 
