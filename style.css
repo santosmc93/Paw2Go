@@ -582,6 +582,15 @@ a {
   letter-spacing: 0.4rem;
 }
 
+.right-about_button{
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+.right-about_button span{
+  font-weight: bold;
+}
+
 .meet {
   position: relative;
   width: 1280px;
@@ -754,13 +763,14 @@ a {
   background-color: #fdf7e6;
 }
 .right-about {
-  background: #ecececaf;
+  background: #682c2138;
   padding: 2rem;
   font-weight: 700;
 }
 
 .right-about p{
   margin: 0;
+  font-weight: lighter;
 }
 
 .about-row {
@@ -778,6 +788,17 @@ a {
     flex-direction: column;
   }
 }
+
+@media only screen and (max-width: 1000px ) {
+  .right-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
 
 /*================    MODAL PERRO Y GATO      ===========*/
 
@@ -940,5 +961,6 @@ a {
   width: 80%;
   max-height: 200px;
 }
+
 
 
