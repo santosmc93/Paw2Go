@@ -47,12 +47,13 @@ function crear(){
       var local = JSON.stringify(user);
       localStorage.setItem(`usuario${i}`,local);
       
-      // alert que se creo la cuenta y se dirije a otra pagina 
+      // alert que se creo la cuenta
       alert("You have sucesfully created a account");
       
       // se incrementa el contador  de usuarios y se actualiza 
       i++;
       localStorage.setItem("i", i);
+      //Redirige, esta linea se movio de lugar, estaba justo despues del alert
       window.location.href ="./loginOwner.html";
 
     }
