@@ -7,6 +7,11 @@
     text-decoration: none;
 }
 
+a {
+  color: #fff;
+  text-decoration: none; /* no underline */
+}
+
 #NavBar {
     background-color: #eae1c7;
     padding: 1% 10%;
@@ -79,7 +84,10 @@
     color: #fff;
     text-align: center;
     padding-top: 5%;
+    display: flex;
+    align-items:  center;
 }
+
 
 /*Main Content*/
 #main-carousel h1 {
@@ -153,11 +161,13 @@
 .center-icon {
   background-color: #a61312;
   border-radius: 10px;
+  height: 100px;
+  width: 200px;
   border: 3px solid black;
 }
 
-.center-icon {
-  background-color: #a61312;
+.center-icon span {
+  font-size: 0.9rem;
 }
 
 #place-time p{
@@ -299,17 +309,16 @@
   align-items: flex-start;
 }
 
-.conctact-container .contactInfo ul.info li span:nth-child(2) {
-  color: #333;
-  font-weight: 300;
-  font-size: 0.9rem;
+.cnt-font {
   font-weight: bold;
+  font-size: 0.9rem;
 }
 
 .conctact-container .contactInfo ul.sci {
   position: relative;
   display: flex;
 }
+
 .conctact-container .contactInfo ul.sci li {
   list-style: none;
 }
@@ -329,6 +338,20 @@
   color: #a61312;
   font-size: 24px;
   font-weight: 500;
+}
+
+.btn-cnt{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+}
+
+.btn-contact {
+  color: #fff;
+  background-color: #a61312;
+}
+.btn-contact span{
+  font-weight: lighter;
 }
 
 .conctact-container .contactForm .formBox {
@@ -408,6 +431,7 @@
   background: #d56756;
 }
 
+/*Contact MediaQuery*/
 @media (max-width: 1200px) {
   .conctact-container {
     max-width: 90%;
@@ -477,7 +501,8 @@
   }
 }
 
-@media only screen and (max-width: 560px) {
+/*Nav MediaQuery*/
+@media only screen and (max-width: 1000px) {
     .btn-carousel {
         display: none;
     }
@@ -485,11 +510,11 @@
 
 @media only screen and (max-width: 1600px ) and (min-width:990px) {
     .nav-link { 
-        font-size: 1.5vw;
+        font-size: 1.1vw;
     }
 }
 
-@media only screen and (max-width: 991px){
+@media only screen and (max-width: 1300px){
     .navbar-icon-lg {
         display: none;
     }
@@ -502,11 +527,11 @@
     .navbar-icon-sm {
         display: block;
         width: 5rem;
-        margin-right: 3%;
+        margin-right: 1rem;
     }
 }
 
-@media only screen and (max-width: 400px ) {
+@media only screen and (max-width: 420px ) {
     .burger{
         text-align: center;
         min-width: 100%;
@@ -515,9 +540,20 @@
         display: flex;
         justify-content:center ;
         align-items: center;
+        text-align: center;
+    }
+    .nav-resp {
+      display: flex;
+      justify-content:center ;
+      align-items: center;
+      text-align: center;
+    }
+    .navbar-brand {
+      padding: 0;
+      margin: 0;
     }
     #main-carousel h1 {
-        font-size: 2.3rem;
+        font-size: 2rem;
         font-weight: 900;
     }
 }
