@@ -68,7 +68,6 @@
         </section>
 
     <div class="main" >
-
         <div class="container-all">
             <div class="box-back">
                 <div class="box-back-login">
@@ -85,23 +84,24 @@
 
             <!--Formulario de Login y registro-->
             <div class="container-login-signup">
+
                 <!--Login-->
                 <form action="" class="form-login">
                     <h2>Login</h2>
-                    <input type="text" placeholder="E-mail">
-                    <input type="password" placeholder="Password">
-                    <button>Entrar</button>
+                    <input type="text" placeholder="User name" id="username">
+                    <input type="password" placeholder="Password" id="password">
+                    <button id="sign-in-btn">Sign in</button>
                 </form>
 
                 <!--Register-->
                 <form action="" class="form-signup">
                     <h2>Sign up</h2>
-                    <input type="text" placeholder="Full name">
-                    <input type="text" placeholder="E-mail">
-                    <input type="text" placeholder="User name">
-                    <input type="password" placeholder="Password">
-                    <input type="password" placeholder="Confirm password">
-                    <button>Sign up</button>
+                    <input type="text" placeholder="Full name" id="full-name">
+                    <input type="text" placeholder="E-mail" id="email">
+                    <input type="text" placeholder="User name" id="username1">
+                    <input type="password" placeholder="Password" id="password1">
+                    <input type="password" placeholder="Confirm password" id="password2">
+                    <button id="sign-up-btn">Sign up</button>
                 </form>
             </div>
         </div>
@@ -112,22 +112,25 @@
             <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-2x footer-icon"></i></a>
             <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x footer-icon"></i></a>
             <a href="https://wa.me/+52331462531" target="_blank"><i class="fab fa-whatsapp fa-2x footer-icon"></i></a>
-            <a href="mailto: abc@example.com/" target="_blank"><i class="fas fa-envelope fa-2x footer-icon"></i></a>
+            <a href="mailto:  paw2go.contacto@gmail.com/" target="_blank"><i class="fas fa-envelope fa-2x footer-icon"></i></a>
             <p>© Copyright 2021 Paw2Go!</p>
         </footer>
 
-<!-- Script de animaciones de caja de login -->
+    <!-- Script de animaciones de caja de login -->
     <script src="/scripts/login-animations.js"></script>
+    
+    <!-- Script de funcionalidad de login -->
+    <script src="/scripts/script-login-local.js"></script>
 
-        <!-- Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
 </html>
