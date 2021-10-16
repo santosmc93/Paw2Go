@@ -31,7 +31,7 @@ function registerUser() {
 }
 
 //Validacion al hacer login
-var attempt = 3; // Variable to count number of attempts.
+var attempt = 3; // Variable para contar los intentos restantes
 //Evento para inicializar el evento de ingreso de usuarios
 document.getElementById("sign-in-btn").addEventListener("click", validate);
 //Funcion para hacer login
@@ -45,7 +45,7 @@ alert ("You sign in successfully");
 return false;
 }
 else{
-attempt --;// Decrementa en uno
+attempt --;// Decrementa en uno la cantidad de intentos
 alert("You have left "+attempt+" attempt;");
 // Desabilita los campos tras tres intentos fallidos de login
 if( attempt == 0){
