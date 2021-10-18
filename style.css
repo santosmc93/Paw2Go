@@ -843,6 +843,7 @@ a {
   --transform: translateY(-200vh);
   --transition: transform .8s;
   z-index: 1000;
+  overflow: scroll;
 }
 
 .modalCat{
@@ -859,6 +860,7 @@ a {
   --transform: translateY(-200vh);
   --transition: transform .8s;
   z-index: 1000;
+  overflow: scroll;
 }
 
 .modal__container{
