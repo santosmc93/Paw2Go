@@ -1,12 +1,13 @@
 class Articulo {
-    constructor(nombre, descripcion, imagen, precio, categorias = [], gato, perro){
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-        this.imagen = imagen;
-        this.precio = precio;
-        this.categorias = categorias;
-        this.gato = gato;
-        this.perro = perro;
+    constructor(id, name, description, image, price, categories = [], cat, dog){
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.image = image;
+        this.price = price;
+        this.categories = categories;
+        this.cat = cat;
+        this.dog = dog;
     }
 }
 
@@ -17,22 +18,22 @@ let articulosArray = [];
 
 boton.addEventListener("click", function enviar(e){
     e.preventDefault();
+    let id = document.getElementById("id").value;
+    let name = document.getElementById("name").value;
+    let description = document.getElementById("description").value;
+    let image = document.getElementById("link").value;
+    let price = document.getElementById("price").value;
+    let cat = document.getElementById("cat").checked;
+    let dog = document.getElementById("dog").checked;
 
-    let nombre = document.getElementById("nombre").value;
-    let descripcion = document.getElementById("descripcion").value;
-    let imagen = document.getElementById("link").value;
-    let precio = document.getElementById("precio").value;
-    let gato = document.getElementById("gato").checked;
-    let perro = document.getElementById("perro").checked;
-
-    if(nombre == "" || descripcion == "" || precio == "" || imagen == ""){
+    if(name == "" || description == "" || price == "" || image == ""){
         alert("All fields are mandatory");
     }else {
-        if(gato == false && perro == false){
+        if(cat == false && dog == false){
             alert("Please, choose an option: Cat or Dog");
         } else {
 
-    let articulo = new Articulo(nombre,descripcion,imagen,precio,
+    let articulo = new Articulo(id, name,description,image,price,
         [document.getElementById("HyW").checked,
          document.getElementById("TyC").checked,
          document.getElementById("Home").checked,
@@ -44,12 +45,17 @@ boton.addEventListener("click", function enviar(e){
          document.getElementById("NandC").checked,
          document.getElementById("DryFood").checked,
          document.getElementById("WetFood").checked,
-         ], gato, perro);
+         ], cat, dog);
 
-    articulosArray.push(articulo);
-    let articuloJson = JSON.stringify(articulosArray);
 
-    localStorage.setItem("articulos", articuloJson);
+    // articulosArray.push(articulo);
+    // let articuloJson = JSON.stringify(articulosArray);
+    // localStorage.setItem("articulos", articuloJson);
+
+    let articuloJson = JSON.stringify(articulo);
+    localStorage.setItem(articulo.id, articuloJson);
+    
+    console.log(localStorage.getItem(articulo.id));
         }
     }
     //localStorage.setItem("descripcion", articulo.descripcion);
@@ -74,9 +80,11 @@ boton.addEventListener("click", function enviar(e){
     // 'img': imagen,
     // 'description':descripcion});
 
-    console.log(articulo.nombre);
-    console.log(articulo.descripcion);
-    console.log(articuloJson);
+    // console.log(articulo.nombre);
+    // console.log(articulo.descripcion);
+    // console.log(articuloJson);
+
+
 })
 
 botonMostrar.addEventListener("click", function mostrar(e){
