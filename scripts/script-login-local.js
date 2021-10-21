@@ -33,29 +33,22 @@ function registerUser() {
 }
 
 //Validacion al hacer login
-var attempt = 3; // Variable para contar los intentos restantes
 //Evento para inicializar el evento de ingreso de usuarios
-document.getElementById("sign-in-btn").addEventListener("click", validate);
-//Funcion para hacer login
-function validate(){
-var username = document.getElementById("username").value;
-var password = document.getElementById("password").value;
-password = btoa(password);
-let usuario = JSON.parse(localStorage.getItem(`user data`));
-if (username == usuario.name && password == usuario.password){ 
-alert ("You sign in successfully");
-//window.location = "success.html"; // Redirecting to other page.
-return false;
-}
-else{
-attempt --;// Decrementa en uno la cantidad de intentos
-alert("You have " + attempt +" attempts left");
-// Desabilita los campos tras tres intentos fallidos de login
-if( attempt == 0){
-document.getElementById("username").disabled = true;
-document.getElementById("password").disabled = true;
-document.getElementById("submit").disabled = true;
-return false;
-}
-}
-}
+document.getElementById("sign-in-btn").addEventListener("click", function validate(e){
+    e.preventDefault();
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+    password = btoa(password);
+    let usuario = JSON.parse(localStorage.getItem(`user data`));
+    
+    if (username == usuario.name && password == usuario.password){ 
+        alert("You have sign in successfully")
+        window.location.href = "succeslogin.html"; 
+        // Redirecting to other page.
+    //return false;
+    }
+    else{
+        alert("Password or user name are incorrect")
+    }
+    }
+    );
