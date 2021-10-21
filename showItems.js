@@ -98,6 +98,7 @@
       '          </a> '+
       '          '+ auxArticulo.description +'  '+
       '        </h2> '+
+      '         <div class="price mt-2">$'+ auxArticulo.price +'</div>'+
       '        <a href="#" class="btn btn-light"> <span class="text">Add to car</span> <i '+
       '            class="fa fa-shopping-cart"></i> </a> '+
       '      </figcaption> '+
