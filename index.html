@@ -202,16 +202,57 @@
             <span>
                 <i class="fas fa-dog iconGrooming navbar-brand"></i>
             </span>
-            <p class="modal__paragraph"></p>
+            <div class="position-labels">
+                <div class="row row1">
+                    <div class="col-lg-5">
+                        <input class="formulary-label" type="text" name="Name" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-lg-5">
+                        <input class="formulary-label" type="number" name="Name" placeholder="Phone Number" required>
+                    </div>
+                </div>
+              
+                <div class="row row1">
+                    <div class="col-lg-10">
+                        <input class="formulary-label" type="email" name="Name" placeholder="Email address" required>
+                    </div>
+                </div>
+
+                <div class="row row1">
+                    <div class="col-lg-4">
+                        <input class="formulary-label" type="text" name="Name" placeholder="Dog´s Name" required>
+                    </div>
+                    <div class="col-lg-3">
+                            <input class="formulary-label"list="age" name="Dog's Age" placeholder="Dog´s Age" />
+                            <datalist id="age">
+                              <option value="Months">
+                              <option value="1 Year">
+                              <option value="2 Years">
+                              <option value="3 Years">
+                              <option value="4 Years">
+                              <option value="+5 Years">
+                            </datalist>
+                    </div>
+                    <div class="col-lg-3">
+                        <input class="formulary-label" list="Breed" name="Breed" placeholder="Breed" />
+                        <datalist id="Breed">
+                          <option value="Chrome">
+                          <option value="Firefox">
+                          <option value="Internet Explorer">
+                          <option value="Opera">
+                          <option value="Safari">
+                          <option value="Microsoft Edge">
+                        </datalist>
+                    </div>
+                </div>
+                <div class="row row1">
+                    <div class="col-lg-10">
+                        <input class="formulary-label" type="datetime-local" name="" id="">
+                    </div>
+                </div>
+            </div>   
             
-                    <input class="formulary-label" type="text" name="Name" placeholder="Dog´s Name" required>
-                
-                
-                    <input class="formulary-label" type="text" name="Name" placeholder="Breed" required>
-               
-                    <input class="formulary-label" type="text" name="Name" placeholder="Dog´s Age" required>
-                
-                    <input class="formulary-label" type="datetime-local" name="" id="">
+                    
                 
             <p class="modal__paragraph">Additional Instructions:</p>
             <textarea class="textboxGrooming" name="textGrooming" id="" cols="30" rows="4"></textarea>
