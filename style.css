@@ -844,6 +844,7 @@ a {
   --transition: transform .8s;
   z-index: 1000;
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 .modalCat{
@@ -861,6 +862,7 @@ a {
   --transition: transform .8s;
   z-index: 1000;
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 .modal__container{
@@ -877,6 +879,7 @@ a {
   grid-auto-columns: 100%;
   transform: var(--transform);
   transition:var(--transition);
+  margin-top: 1em;
 }
 
 .modalDog--show{
