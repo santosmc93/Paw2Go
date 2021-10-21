@@ -27,7 +27,7 @@ function crear(){
     password1 = btoa(password1);
     // variable que sirve para saber si un correo esta dado de alta
     var correo = false;
-    // objeto con los datos que se obtibieron del register
+    // objeto con los datos que se obtuvieron del register
     var user = new Object();
     user.id = i;
     user.name = name;
@@ -60,14 +60,13 @@ function crear(){
   }
 }
 
-
 /* LOGIN */
 
-let j = localStorage.getItem("j");
+var j = localStorage.getItem("i");
 let check = false;
-document.getElementById("LOGIN").addEventListener("click", Login);
+document.getElementById("LOGIN").addEventListener("click", function Login (e){
+  e.preventDefault();
 
-function Login(){
   let Username = document.getElementById("Username").value;
   let password = document.getElementById("password").value;
   password = btoa(password);
@@ -75,7 +74,7 @@ function Login(){
 
 for(let cont=0; cont< i ; cont++){
   let usuario= JSON.parse(localStorage.getItem(`usuario${cont}`));
-  if(usuario.Username === Username && usuario.password === password){
+  if(usuario.name === Username && usuario.password === password){
     check = true;
   }
 }
@@ -84,5 +83,4 @@ if(check){
 }else{
   alert(" Username or Password incorrect");
 }
-}		 
-
+});		 

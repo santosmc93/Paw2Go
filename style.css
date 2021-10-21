@@ -702,3 +702,8 @@ form .btn input[type="submit"]{
   font-weight: 500;
   cursor: pointer;
 }
+/* pagina del admin */
+.navflex{
+  display: flex;
+  justify-content: center;
+}
