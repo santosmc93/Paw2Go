@@ -956,6 +956,7 @@ input::placeholder{
 
 .iconGrooming{
     font-size: 4rem;
+    margin-bottom: 1rem;
 }
 
 .SubmitButton{
@@ -977,5 +978,8 @@ input::placeholder{
   max-height: 200px;
 }
 
+.modal__paragraph{
+  margin-top: 0;
+}
 
 
