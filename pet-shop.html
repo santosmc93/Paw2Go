@@ -964,8 +964,406 @@
 
 
 
+<!--================    MODAL PERRO Y GATO      ===========-->
+    
+    <!-- MODAL PERRO -->
+    <section class="modalDog">
+      <div class="modal__container">
+          <a href="#" class="modalDog__close">X</a>
+          
+          <h2 class="modal__title navbar-brand">Dog Grooming!</h2>
+          <span>
+              <i class="fas fa-dog iconGrooming navbar-brand"></i>
+          </span>
+          <div class="position-labels">
+              <div class="row row1">
+                  <div class="col-lg-10">
+                      <input class="formulary-label" type="text" name="Name" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-lg-5">
+                      <input class="formulary-label" type="number" name="Name" placeholder="Phone Number 1" required>
+                  </div>
+                  <div class="col-lg-5">
+                      <input class="formulary-label" type="number" name="Name" placeholder="Phone Number 2">
+                  </div>
+              </div>
 
-      
+              <div class="row row1">
+                  <div class="col-lg-10">
+                      <input class="formulary-label" type="email" name="Name" placeholder="Email address" required>
+                  </div>
+              </div>
+
+              <div class="row row1">
+                  <div class="col-lg-5">
+                      <input class="formulary-label" type="text" name="Name" placeholder="Dog´s Name" required>
+                  </div>
+                  <div class="col-lg-5">
+                          <input class="formulary-label"list="age" name="Dog's Age" placeholder="Dog´s Age" />
+                          <datalist id="age">
+                            <option value="Months">
+                            <option value="1 Year">
+                            <option value="2 Years">
+                            <option value="3 Years">
+                            <option value="4 Years">
+                            <option value="+5 Years">
+                          </datalist>
+                  </div>
+                  
+              </div>
+              <div class="row row1">
+                  <div class="col-lg-10">
+                      <input class="formulary-label" list="DogBreed" name="Breed" placeholder="Breed" />
+                      <datalist id="DogBreed">
+                          <option value="Affenpinscher">
+                          <option value="Afghan Hound">
+                          <option value="Ainu">
+                          <option value="Airedale Terrier">
+                          <option value="Akita">
+                          <option value="Alaskan Husky">
+                          <option value="Alaskan Klee Kai">
+                          <option value="Alaskan Malamute">
+                          <option value="American Bulldog">
+                          <option value="American Eskimo Dog">
+                          <option value="American Foxhound">
+                          <option value="American Pit Bull Terrier">
+                          <option value="American Staffordshire Terrier">
+                          <option value="American Water Spaniel">
+                          <option value="Anatolian Shepherd Dog">
+                          <option value="Australian Cattle Dog">
+                          <option value="Australian Shepherd">
+                          <option value="Australian Terrier">
+                          <option value="Basenji">
+                          <option value="Basset Hound">
+                          <option value="Beagle">
+                          <option value="Bearded Collie">
+                          <option value="Beauceron">
+                          <option value="Bedlington terrier">
+                          <option value="Belgian Malinois">
+                          <option value="Belgian sheepdog">
+                          <option value="Belgian Tervuren">
+                          <option value="Bergamasco">
+                          <option value="Bernese Mountain Dog">
+                          <option value="Bichon Frise">
+                          <option value="Black and Tan Coonhound">
+                          <option value="Black Russian Terrier">
+                          <option value="Bloodhound">
+                          <option value="Bolognese">
+                          <option value="Border Collie">
+                          <option value="Border Terrier">
+                          <option value="Borzoi">
+                          <option value="Boston Terrier">
+                          <option value="Bouvier des Flandres">
+                          <option value="Boxer">
+                          <option value="Biard">
+                          <option value="Brittany">
+                          <option value="Brussels Griffon">
+                          <option value="Bull Terrier">
+                          <option value="Bulldog">
+                          <option value="Bullmastiff">
+                          <option value="Cairn Terrier">
+                          <option value="Canaan Dog">
+                          <option value="Cane Corso">
+                          <option value="Cardigan Welsh Corgi">
+                          <option value="Catahoula Leopard Dog">
+                          <option value="Cavalier King Charles Spaniel">
+                          <option value="Cesky Terrier">
+                          <option value="Chesapeake Bey Retriever">
+                          <option value="Chihuahua">
+                          <option value="Chinese Crested">
+                          <option value="Chinese Shar-Pei">
+                          <option value="Chinook">
+                          <option value="Chow Chow">
+                          <option value="Clumber Spaniel">
+                          <option value="Cocker Spanie">
+                          <option value="Collie">
+                          <option value="Coton de tular">
+                          <option value="Curly-coated Retriever">
+                          <option value="Dauchshund">
+                          <option value="Dalmation">
+                          <option value="Dandie Dinmount Terrier">
+                          <option value="Dingo">
+                          <option value="Doberman Pinscher">
+                          <option value="English Cocker Spaniel">
+                          <option value="English Foxhoud">
+                          <option value="English Setter">
+                          <option value="English Springer Spaniel">
+                          <option value="English Toy Spaniel">
+                          <option value="Estrela Mountain Dog">
+                          <option value="Field Spaniel">
+                          <option value="Finnish Spitz">
+                          <option value="Flat-coated Retriever">
+                          <option value="French Bulldog">
+                          <option value="German Pinscher">
+                          <option value="German Shepard dog">
+                          <option value="German short-haired Pointer">
+                          <option value="German wire-haired Pointer">
+                          <option value="Giant Schnauzer">
+                          <option value="Glen of Imaal Terrier">
+                          <option value="Golden Retriever">
+                          <option value="Gordon Setter">
+                          <option value="Great Dane">
+                          <option value="Great Pyreness">
+                          <option value="Greater Swiss mountain dog">
+                          <option value="Greyhound">
+                          <option value="Harrier">
+                          <option value="Havanese">
+                          <option value="Ibizan Hound">
+                          <option value="Icelandic Sheepdog">
+                          <option value="Irish Red and White Setter">
+                          <option value="Irish Setter">
+                          <option value="Irish Terrier">
+                          <option value="Irish Water Spaniel">
+                          <option value="Irish Wolfhound">
+                          <option value="Italian Greyhound">
+                          <option value="Jack Russell Terrier">
+                          <option value="Japanese Chin">
+                          <option value="Japanese Terrier">
+                          <option value="Keeshond">
+                          <option value="Kerry Beagle">
+                          <option value="Kerry Blue Terrier">
+                          <option value="Komondor">
+                          <option value="Kuvasz">
+                          <option value="Labradoodle">
+                          <option value="Labrador Retreiver">
+                          <option value="Lakeland Terrier">
+                          <option value="Lancashire Heeler">
+                          <option value="Leonberber">
+                          <option value="Lhasa Apso">
+                          <option value="Lowchen">
+                          <option value="Maltese">
+                          <option value="Manchester Terrier">
+                          <option value="Mastiff">
+                          <option value="Miniature Bull Terrier">
+                          <option value="Miniature Pinscher">
+                          <option value="Miniature Schnauzer">
+                          <option value="Neapolitan Mastiff">
+                          <option value="Newfoundland">
+                          <option value="Norfolk Terrier">
+                          <option value="Nowegian Elkhound">
+                          <option value="Norewegian Lundehund">
+                          <option value="Norwich Terrier">
+                          <option value="Nova Scotia Duck Tolling Retriever">
+                          <option value="Old English Sheepdog">
+                          <option value="Otterhound">
+                          <option value="Papillon">
+                          <option value="Parson Russell Terrier">
+                          <option value="Pekingese">
+                          <option value="Pembroke Welsh Corgi">
+                          <option value="Petit Basset Griffon Vendeen">
+                          <option value="Pharaoh Hound">
+                          <option value="Plott">
+                          <option value="Pointer">
+                          <option value="Ploish Lowland Sheepdog">
+                          <option value="Pomeranian">
+                          <option value="Poodle">
+                          <option value="Portuguese Water Dog">
+                          <option value="Pug">
+                          <option value="Puli">
+                          <option value="Rat Terrier">
+                          <option value="Redbone Coonhound">
+                          <option value="Rhodesian Ridgeback">
+                          <option value="Rottweiler">
+                          <option value="Saint Bernard">
+                          <option value="Saluki">
+                          <option value="Samoyed">
+                          <option value="Schipperke">
+                          <option value="Scottish Deerhound">
+                          <option value="Sealyham Terrier">
+                          <option value="Shetland Sheepdog">
+                          <option value="Shiba Inu">
+                          <option value="Shih Tzu">
+                          <option value="Siberian Husky">
+                          <option value="Silky Terrier">
+                          <option value="Skye Terrier">
+                          <option value="Sloughi">
+                          <option value="Smooth Fox Terrier">
+                          <option value="Soft Coated Wheaten Terrier">
+                          <option value="Spanish Mastiff">
+                          <option value="Spinone Italiano">
+                          <option value="Staffordshire Bull Terrier">   
+                          <option value="Standard Shnauzer">
+                          <option value="Sussex Spaniel">
+                          <option value="Swedish Vallhund">
+                          <option value="Thai Ridgeback">
+                          <option value="Tibetan Mastiff">
+                          <option value="Tibetan Terrier">
+                          <option value="Toy Fox Terrier">
+                          <option value="Toy Manchester">
+                          <option value="Toy Poodle">
+                          <option value="Transylvanian Hound">
+                          <option value="Vizsla">
+                          <option value="Volpino Italiano">
+                          <option value="Weimaraner">
+                          <option value="Welsh Springer Spaniel">
+                          <option value="Welsh Terrier">
+                          <option value="West Highland White Terrier">
+                          <option value="Whippet">
+                          <option value="Wire Fox Terrier">
+                          <option value="Wirehaired Pointing Griffon">
+                          <option value="Xoloitzcuintli">
+                          <option value="Yorkshire Terrier">
+                      </datalist>
+                  </div>
+              </div>
+              <div class="row row1">
+                  <div class="col-lg-5">
+                      <input class="formulary-label" type="date" name="" id="">
+                  </div>
+                  <div class="col-lg-5">
+                      <input class="formulary-label" type="time" name="" id="">
+                  </div>
+              </div>
+          </div>   
+           
+          <p class="modal__paragraph">Additional Instructions:</p>
+          <textarea class="textboxGrooming" name="textGrooming" id="" cols="30" rows="4"></textarea>
+          
+          <input class="SubmitButton" type="button" name="submit" value="SUBMIT">
+      </div>
+  </section>
+
+  <!-- MODAL GATO-->
+  <section class="modalCat">
+      <div class="modal__container">
+          <a href="#" class="modalCat__close">X</a>
+          
+          <h2 class="modal__title navbar-brand">Cat Grooming!</h2>
+          <span>
+              <i class="fas fa-cat iconGrooming navbar-brand"></i>
+          </span>
+          <div class="position-labels">
+              <div class="row row1">
+                  <div class="col-lg-10">
+                      <input class="formulary-label" type="text" name="Name" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-lg-5">
+                      <input class="formulary-label" type="number" name="Name" placeholder="Phone Number 1" required>
+                  </div>
+                  <div class="col-lg-5">
+                      <input class="formulary-label" type="number" name="Name" placeholder="Phone Number 2">
+                  </div>
+              </div>
+
+              <div class="row row1">
+                  <div class="col-lg-10">
+                      <input class="formulary-label" type="email" name="Name" placeholder="Email address" required>
+                  </div>
+              </div>
+
+              <div class="row row1">
+                  <div class="col-lg-5">
+                      <input class="formulary-label" type="text" name="Name" placeholder="Cat´s Name" required>
+                  </div>
+                  <div class="col-lg-5">
+                          <input class="formulary-label" list="age" name="Dog's Age" placeholder="Cat´s Age" />
+                  </div>
+                  
+              </div>
+              <div class="row row1">
+                  <div class="col-lg-10">
+                      <input class="formulary-label" list="CatBreed" name="Breed" placeholder="Breed" />
+                      <datalist id="CatBreed">
+                          <option value="American Shorthair">
+                          <option value="Abyssinian">
+                          <option value="American Curl">
+                          <option value="American Bobtail">
+                          <option value="American Wirehair">
+                          <option value="Aegean">
+                          <option value="Australian Mist">
+                          <option value="American Polydactyl">
+                          <option value="Arabian Mau">
+                          <option value="Asian cat">
+                          <option value="Asian Semi-longhair">
+                          <option value="British Shorthair">
+                          <option value="Bengal">
+                          <option value="Burmese">
+                          <option value="Birman">
+                          <option value="Balinese">
+                          <option value="Bombay">
+                          <option value="Burmilla">
+                          <option value="Bambino">
+                          <option value="Brazilian Shorthair">
+                          <option value="British Longhair">
+                          <option value="Cornish Rex">
+                          <option value="Colorpoint Shorthair">
+                          <option value="Chartreux">
+                          <option value="California Spangled">
+                          <option value="Cymric">
+                          <option value="Chantilly-Tiffany">
+                          <option value="Chausie">
+                          <option value="Cheetoh">
+                          <option value="Cyprus">
+                          <option value="Devon Rex">
+                          <option value="Donskoy">
+                          <option value="Dwelf">
+                          <option value="Exotic Shorthair">
+                          <option value="Egyptian Mau">
+                          <option value="European Burmese">
+                          <option value="Elf cat">
+                          <option value="Havana Brown">
+                          <option value="Himalayan">
+                          <option value="Japanese Bobtail">
+                          <option value="Javanese">
+                          <option value="Khao Manee">
+                          <option value="Korat">
+                          <option value="Lykoi">
+                          <option value="LaPerm">
+                          <option value="Maine Coon">
+                          <option value="Manx">
+                          <option value="Munchkin">
+                          <option value="Minskin">
+                          <option value="Norwegian Forest Cat">
+                          <option value="Nebelung">
+                          <option value="Napoleon cat">
+                          <option value="Oriental">
+                          <option value="Ocicat">
+                          <option value="Persian">
+                          <option value="Pixie-bob">
+                          <option value="Peterbald">
+                          <option value="Ragdoll">
+                          <option value="Russian Blue">
+                          <option value="Ragamuffin">
+                          <option value="Sphynx">
+                          <option value="Scottish Fold">
+                          <option value="Siamese">
+                          <option value="Siberian">
+                          <option value="Selkirk Rex">
+                          <option value="Somali">
+                          <option value="Singapura">
+                          <option value="Savannah">
+                          <option value="Snowshoe">
+                          <option value="Sokoke">
+                          <option value="Serengeti cat">
+                          <option value="Tonkinese">
+                          <option value="Turkish Angora">
+                          <option value="Turkish Van">
+                          <option value="Toyger">
+                          <option value="Thai cat">
+                          <option value="Ukrainian Levkoy">
+                          <option value="York Chocolate">                 
+                      </datalist>
+                  </div>
+              </div>
+              <div class="row row1">
+                  <div class="col-lg-5">
+                      <input class="formulary-label" type="date" name="" id="">
+                  </div>
+                  <div class="col-lg-5">
+                      <input class="formulary-label" type="time" name="" id="">
+                  </div>
+              </div>
+          </div>   
+           
+          <p class="modal__paragraph">Additional Instructions:</p>
+          <textarea class="textboxGrooming" name="textGrooming" id="" cols="30" rows="4"></textarea>
+          
+          <input class="SubmitButton" type="button" name="submit" value="SUBMIT">
+      </div>
+  </section>
+      <!--Script VENTANA MODAL PERRO Y GATO-->
+      <script src="./scripts/ModalDogGrooming.js"></script>
+      <script src="./scripts/ModalCatGrooming.js"></script>
       <!--Footer-->
     
         <!--Footer-->
