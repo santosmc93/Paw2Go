@@ -59,20 +59,33 @@ font-size: 1.3rem;
 }
 
 
-
-
-
-
-/* imagen inicio */
-.responsive{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-  margin-bottom: 10px;
-
-
+/*Carousel*/
+#main-carousel .carousel-inner img {
+  max-height: 50vh;
+  object-fit: cover;
+  filter: grayscale(50%);
 }
+
+#carousel {
+  position: relative;
+}
+
+#carousel .overlay {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  padding-top: 5%;}
+
+
+
+
+
 
 /* linea de division */
 .lineadivision{
