@@ -61,7 +61,7 @@ function crear(){
 }
 
 /* LOGIN */
-
+var i = 1;
 var j = localStorage.getItem("i");
 let check = false;
 document.getElementById("LOGIN").addEventListener("click", function Login (e){
@@ -79,7 +79,7 @@ for(let cont=0; cont< i ; cont++){
   }
 }
 if(check){
-  location.href="/loginOwner.html";
+  location.href="/addObject.html";
 }else{
   alert(" Username or Password incorrect");
 }

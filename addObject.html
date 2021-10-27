@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>About Us | PAW2GO!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="./img/icon-sm-2.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+     <!-- NavBar -->
+     <section id="NavBar">
+        <nav class="navbar navbar-expand-xl navbar-dark nav-resp">
+            <a href="./index.html"><img class="navbar-icon-lg" src="./img/icon-lg-2.png" alt="p2g Icon"></a>
+            <a href="./index.html"><img class="navbar-icon-sm" src="./img/icon-sm-2.png" alt="p2g Icon"></a>
+            <a class="navbar-brand" href="./index.html">Paw2Go!</a>
+            <div class="burger">
+                <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="./grooming.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <div><a class="dropdown-item Dog__cta" href="#"><i class="fas fa-dog"></i>  Dog Grooming</a></div>
+                            <div><a class="dropdown-item Cat__cta" href="#"><i class="fas fa-cat"></i>  Cat Grooming</a></div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pet-shop.html">Pet Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./aboutus.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login-user.html">Login</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <main class="main">
+        <div class="contenido-formulario">
+        <h2 class="titulo">Add New Items</h2>
+        <form class="formulario">
+            <div class="campo">
+                <label for="">Product Name</label>
+                <input class="form-control" type="text" placeholder="Product Name Here" aria-label=".form-control example" id="name">
+            </div>
+            <div class="campo">
+                <label for="">Product Description</label>
+                <input class="form-control" type="text" placeholder="Product Description Here" aria-label="default input example" id="description">   
+            </div>
+            <div class="campo">
+                <label for="">Product Id</label>
+                <input class="form-control" type="number" placeholder="Product Idn Here" aria-label="default input example" id="id">   
+            </div>
+            <div class="checkbox">
+                <div class="campo">
+                    <label for="">Health-&-wellness</label>
+                    <input type="checkbox" id="HyW">   
+                </div>
+                <div class="campo">
+                    <label for="">Training-and-cleaning</label>
+                    <input type="checkbox" id="TyC">   
+                </div>
+                <div class="campo">
+                    <label for="">Home</label>
+                    <input type="checkbox" id="Home">   
+                </div>
+                <div class="campo">
+                    <label for="">Cat litter-and-accesories</label>
+                    <input type="checkbox" id="SandA">   
+                </div>
+                <div class="campo">
+                    <label for="">Transporters-and-travel</label>
+                    <input type="checkbox" id="TandT">   
+                </div>
+                <div class="campo">
+                    <label for="">Toys</label>
+                    <input type="checkbox" id="Toys">   
+                </div>
+                <div class="campo">
+                    <label for="">Grooming</label>
+                    <input type="checkbox" id="Grooming">   
+                </div>
+                <div class="campo">
+                    <label for="">Dental-care</label>
+                    <input type="checkbox" id="Dental">   
+                </div>
+                <div class="campo">
+                    <label for="">Necklaces-leashes-and-clothes</label>
+                    <input type="checkbox" id="NandC">   
+                </div>
+                <div class="campo">
+                    <label for="">Dry-food</label>
+                    <input type="checkbox" id="DryFood">   
+                </div>
+                <div class="campo">
+                    <label for="">Wet-food</label>
+                    <input type="checkbox" id="WetFood">   
+                </div>
+            </div>
+            <div class="gato-perro">
+                <div class="campo">
+                    <label for="">CAT</label>
+                    <input type="radio" id="cat" name="mascota">   
+                </div>
+                <div class="campo">
+                    <label for="">DOG</label>
+                    <input type="radio" id="dog" name="mascota">   
+                </div>
+            </div>
+            <div class="campo">
+                <label for="">Product Price</label>
+                <input class="form-control" type="text" placeholder="Product Price Here" aria-label=".form-control-sm example" id="price">
+            </div>
+
+            <div class="campo">
+                <label for="">URL Image Product</label>
+                <input class="form-control" type="text" placeholder="Product URL Image" aria-label=".form-control-sm example" id="link">
+            </div>
+        </form>
+        
+        <div class="botones">
+            <button id="boton">Send</button>
+            <button id="boton-mostrar">Show</button>
+        </div>
+        </div>
+
+        <div id="list-items">
+
+        </div>
+        
+    </main>
+
+    <!--Footer-->
+    <footer id="footer">
+        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square fa-2x footer-icon"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x footer-icon"></i></a>
+        <a href="https://wa.me/+52331462531" target="_blank"><i class="fab fa-whatsapp fa-2x footer-icon"></i></a>
+        <a href="mailto: abc@example.com/" target="_blank"><i class="fas fa-envelope fa-2x footer-icon"></i></a>
+        <p>© Copyright 2021 Paw2Go!</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./scripts/Items.js"></script>
+</body>
+
+</html>
