@@ -544,8 +544,8 @@
 .main-objetos .titulo {
   color: #a61312;
   /* color: white; */
-  font-size: 24px;
-  font-weight: 700;
+  font-size: 28px;
+  font-weight: 900;
   text-align: center;
 }
 
@@ -568,6 +568,11 @@
   padding: 12px;
   width: 100%;
   margin-bottom: 15px;
+}
+
+.botones button:hover {
+  background-color: #d56756;
+  transition: background-color ease 1s;
 }
 
 .main-objetos{
@@ -640,6 +645,14 @@
 
   .gato-perro {
     border-top: 2px solid #fff;
+  }
+
+  .checkbox input[type=checkbox]{
+    transform: scale(1.5);
+  }
+
+  .gato-perro input[type=radio]{
+    transform: scale(2);
   }
 
 /********************* Ingreso de nuevos Objetos **********************/

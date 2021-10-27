@@ -24,6 +24,7 @@ boton.addEventListener("click", function enviar(e){
     let precio = document.getElementById("precio").value;
     let gato = document.getElementById("gato").checked;
     let perro = document.getElementById("perro").checked;
+    let formulario = document.getElementById("form");
 
     if(nombre == "" || descripcion == "" || precio == "" || imagen == ""){
         alert("All fields are mandatory");
@@ -50,31 +51,12 @@ boton.addEventListener("click", function enviar(e){
     let articuloJson = JSON.stringify(articulosArray);
 
     localStorage.setItem("articulos", articuloJson);
+    alert("New item created succesfully");
+    formulario.reset();
         }
     }
-    //localStorage.setItem("descripcion", articulo.descripcion);
-    //localStorage.setItem("imagen", articulo.imagen);
-
-    //************** ESTO YA JALAAAAAAAA ***************************/
-    // function addItem(item){
-    //     const itemHTML = '<div class="card" style="width: 18rem;">\n' +
-    //         '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
-    //         '    <div class="card-body">\n' +
-    //         '        <h5 class="card-title">'+item.name+'</h5>\n' +
-    //         '        <p class="card-text">'+item.description+'</p>\n' +
-    //         '        <a href="#" class="btn btn-primary">Add</a>\n' +
-    //         '    </div>\n' +
-    //         '</div>\n' +
-    //         '<br/>';
-    //     const itemsContainer = document.getElementById("list-items");
-    //     itemsContainer.innerHTML += itemHTML;
-    // }
-
-    // addItem({'name':nombre,
-    // 'img': imagen,
-    // 'description':descripcion});
     
-    alert("New item created succesfully");
+    
 })
 
 botonMostrar.addEventListener("click", function mostrar(e){
