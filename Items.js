@@ -55,8 +55,6 @@ boton.addEventListener("click", function enviar(e){
     formulario.reset();
         }
     }
-    
-    
 })
 
 botonMostrar.addEventListener("click", function mostrar(e){
