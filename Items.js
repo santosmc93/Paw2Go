@@ -73,10 +73,8 @@ boton.addEventListener("click", function enviar(e){
     // addItem({'name':nombre,
     // 'img': imagen,
     // 'description':descripcion});
-
-    console.log(articulo.nombre);
-    console.log(articulo.descripcion);
-    console.log(articuloJson);
+    
+    alert("New item created succesfully");
 })
 
 botonMostrar.addEventListener("click", function mostrar(e){
@@ -96,7 +94,6 @@ botonMostrar.addEventListener("click", function mostrar(e){
         itemsContainer.innerHTML += itemHTML;
     }
 
-    
     let articulosObjeto = JSON.parse(localStorage.getItem("articulos"));
     console.log(articulosObjeto);
 

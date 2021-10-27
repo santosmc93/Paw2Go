@@ -541,7 +541,7 @@
   margin-bottom: 15px;
 }
 
-.main .titulo {
+.main-objetos .titulo {
   color: #a61312;
   /* color: white; */
   font-size: 24px;
@@ -570,7 +570,7 @@
   margin-bottom: 15px;
 }
 
-.main{
+.main-objetos{
   background-image: url("https://estaticos.muyinteresante.es/uploads/images/article/5e53ccda5cafe849c002505d/mascotas.jpg");
   background-position: center center;
   background-size: cover;
@@ -583,7 +583,7 @@
 }
 
 @media (min-width: 768px) {
-    .main{
+    .main-objetos{
       height: 800px;
     }
 }
