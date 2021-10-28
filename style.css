@@ -656,3 +656,27 @@
   }
 
 /********************* Ingreso de nuevos Objetos **********************/
+
+/********************** PAGINA MOSTRAR DATOS *************************/
+.barra-botones{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.tarjeta {
+  background-color: #a61312;
+  margin: 15px 0;
+}
+
+.tarjeta img {
+  width: 100%;
+  padding: 25px 25px;
+  height: 400px;
+}
+
+.lista-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 25px;
+}
