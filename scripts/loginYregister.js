@@ -61,7 +61,7 @@ function crear(){
 }
 
 /* LOGIN */
-var i = 1;
+
 var j = localStorage.getItem("i");
 let check = false;
 document.getElementById("LOGIN").addEventListener("click", function Login (e){
