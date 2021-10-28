@@ -70,41 +70,41 @@
         }else{
             categories.push("Dog");
         }
-            
 
-        let object ='  <li class="post" data-category="';
-        for(let i = 0; i<categories.length;i++){
-            object += categories[i] + " ";
-        }
-        object += ' ">  ' +
-      ' <article> ' +
-      '  <figure> ' +
-      ' <a href="" target="_blank"> ' +
-      '        <img src="'+ auxArticulo.image +'" alt="" style="display: block; ' +
-      '                margin-left: auto; ' +
-      '                margin-right: auto; ' +
-      '                width: 50%;"> ' +
-      '                </a> ' +
-      '      <figcaption> ' +
-      '        <ol class="post-categories"> ';
-        for(let i = 0; i < categories.length; i++){
-            object += '<li> '+
-            '            <a href="">'+categories[i] +'</a> '+
-            '          </li> ';
-        };
-      object += '        </ol> '+
-      '        <h2 class="post-title"> '+
-      '          <a href="" target="_blank"> '+
-      '          </a> '+
-      '          '+ auxArticulo.description +'  '+
-      '        </h2> '+
-      '         <div class="price mt-2">$'+ auxArticulo.price +'</div>'+
-      '        <a href="#" class="btn btn-light"> <span class="text">Add to cart</span> <i '+
-      '            class="fa fa-shopping-cart"></i> </a> '+
-      '      </figcaption> '+
-      '    </figure> '+
-      '  </article> '+
-      '</li> ';
+
+      let object = `
+      <li class="post" data-category="`;
+      for(let i = 0; i<categories.length;i++){
+        object += categories[i] + " ";
+    }
+    object += `">
+      <article>
+        <div class="container-card">
+          <div class="card" style="float: left;">
+            <div class="inner-card"> <img src="`+ auxArticulo.image +`" class="img-fluid rounded">
+              <div class="d-flex justify-content-between align-items-center mt-3 px-2">
+                
+                <h4>`+ auxArticulo.name +`</h4>
+              </div>
+              <ol class="post-categories"> `;
+              for(let i = 0; i < categories.length; i++){
+                object += '<li> '+
+                '            <a href="">'+categories[i] +'</a> '+
+                '          </li> ';
+            };
+             object += ` </ol>
+              <div class="mt-2 px-2"> <small>`+ auxArticulo.description +`</small> </div>
+              <div class="px-2">
+                <h3>$`+ auxArticulo.price +`</h3>
+              </div>
+              <div class="px-2 mt-3"> <a href="#" class="btn btn-light"> <span class="text">Add to cart</span> <i
+                    class="fa fa-shopping-cart"></i> </a> </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </li>
+      `;
       const orderedList = document.getElementById("item-list");
       orderedList.innerHTML += object;
       
