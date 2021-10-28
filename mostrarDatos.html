@@ -19,12 +19,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <!-- Style CSS -->
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./style_Objetos.css">
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>admin | PAW2GO!</title>
+    <title>About Us | PAW2GO!</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="./img/icon-sm-2.png" type="image/x-icon">
 
@@ -70,104 +69,18 @@
         </nav>
     </section>
 
-    <main class="main-objetos">
-        <div class="contenido-formulario">
-        <h2 class="titulo">Add New Items</h2>
-        <form class="formulario" id="form">
-            <div class="campo">
-                <label for="">Product Name</label>
-                <input class="form-control" type="text" placeholder="Product Name Here" aria-label=".form-control example" id="name">
-            </div>
-            <div class="campo">
-                <label for="">Product Description</label>
-                <input class="form-control" type="text" placeholder="Product Description Here" aria-label="default input example" id="description">   
-            </div>
-            <div class="campo">
-                <label for="">Product Id</label>
-                <input class="form-control" type="number" placeholder="Product Idn Here" aria-label="default input example" id="id">   
-            </div>
-            <div class="checkbox">
-                <div class="campo">
-                    <label for="">Health-&-wellness</label>
-                    <input type="checkbox" id="HyW">   
-                </div>
-                <div class="campo">
-                    <label for="">Training-and-cleaning</label>
-                    <input type="checkbox" id="TyC">   
-                </div>
-                <div class="campo">
-                    <label for="">Home</label>
-                    <input type="checkbox" id="Home">   
-                </div>
-                <div class="campo">
-                    <label for="">Sand-and-accesories</label>
-                    <input type="checkbox" id="SandA">   
-                </div>
-                <div class="campo">
-                    <label for="">Transporters-and-travel</label>
-                    <input type="checkbox" id="TandT">   
-                </div>
-                <div class="campo">
-                    <label for="">Toys</label>
-                    <input type="checkbox" id="Toys">   
-                </div>
-                <div class="campo">
-                    <label for="">Grooming</label>
-                    <input type="checkbox" id="Grooming">   
-                </div>
-                <div class="campo">
-                    <label for="">Dental-care</label>
-                    <input type="checkbox" id="Dental">   
-                </div>
-                <div class="campo">
-                    <label for="">Necklaces-leashes-and-clothes</label>
-                    <input type="checkbox" id="NandC">   
-                </div>
-                <div class="campo">
-                    <label for="">Dry-food</label>
-                    <input type="checkbox" id="DryFood">   
-                </div>
-                <div class="campo">
-                    <label for="">Wet-food</label>
-                    <input type="checkbox" id="WetFood">   
-                </div>
-            </div>
-            <div class="gato-perro">
-                <div class="campo">
-                    <label for="">CAT</label>
-                    <input type="radio" id="cat" name="mascota">   
-                </div>
-                <div class="campo">
-                    <label for="">DOG</label>
-                    <input type="radio" id="dog" name="mascota">   
-                </div>
-            </div>
-            <div class="campo">
-                <label for="">Product Price</label>
-                <input class="form-control" type="text" placeholder="Product Price Here" aria-label=".form-control-sm example" id="price">
-            </div>
-
-            <div class="campo">
-                <label for="">URL Image Product</label>
-                <input class="form-control" type="text" placeholder="Product URL Image" aria-label=".form-control-sm example" id="link">
-            </div>
-            <div class="campo">
-                <label for="">Quantity</label>
-                <input class="form-control" type="number" min="1" placeholder="Products quantity" aria-label=".form-control-sm example" id="cantidad">
-            </div>
-        </form>
-        
-        <div class="botones">
-            <button id="boton">Send</button>
-            <button id="boton-mostrar">Show</button>
+    <main>
+        <div class="barra-botones">
+            <button id="button-show">Show all items</button>
+            <button id="button-clear">Clear</button>
+            <button id="button-specific-item">show a specific item</button>
         </div>
-        </div>
-
-        <div id="list-items">
+        <div id="lista-objetos" class="contenedor lista-grid">
 
         </div>
-        
     </main>
+
+    
 
     <!--Footer-->
     <footer id="footer">
@@ -188,7 +101,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="./scripts/Items.js"></script>
+        <!-- script de esta pagina -->
+    <script src="./mostrar_datos.js"></script>
 </body>
 
 </html>
