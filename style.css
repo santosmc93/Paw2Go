@@ -1211,6 +1211,10 @@ input::placeholder{
     
   }
 
+  .gato-perro input[type="radio"]{
+    display: block;
+  }
+
   .gato-perro {
     border-top: 2px solid #fff;
   }
