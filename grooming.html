@@ -83,12 +83,12 @@
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <div>
-                  <a class="dropdown-item Dog__cta" href="#"
+                  <a class="dropdown-item Dog__cta" data-toggle="modal" data-target="#modalDog" href="#"
                     ><i class="fas fa-dog"></i> Dog Grooming</a
                   >
                 </div>
                 <div>
-                  <a class="dropdown-item Cat__cta" href="#"
+                  <a class="dropdown-item Cat__cta" data-toggle="modal" data-target="#modalCat" href="#"
                     ><i class="fas fa-cat"></i> Cat Grooming</a
                   >
                 </div>
@@ -124,12 +124,12 @@
       <p id="TellUs">Tell us about your pet</p>
       <div class="services-container_pet">
         <div class="dog-container">
-          <a href="#" class="Dog__cta2">
-            <i class="fas fa-dog" href="#" id="icon-services"></i>
+          <a href="#" data-toggle="modal" data-target="#modalDog" class="Dog__cta2">
+            <i class="fas fa-dog" href="#"  id="icon-services"></i>
           </a>
         </div>
         <div class="cat-container">
-          <a href="#" class="Cat__cta2">
+          <a href="#" data-toggle="modal" data-target="#modalCat" class="Cat__cta2">
             <i class="fas fa-cat" href="#" id="icon-services"></i>
           </a>
         </div>
@@ -683,6 +683,7 @@
       <a href="mailto: abc@example.com/" target="_blank"
         ><i class="fas fa-envelope fa-2x footer-icon"></i
       ></a>
+      
       <p>© Copyright 2021 Paw2Go!</p>
     </footer>
 
