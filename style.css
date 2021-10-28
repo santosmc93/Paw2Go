@@ -247,7 +247,10 @@ body,html{
     height: 5rem;
     bottom: 0;
 }
-
+#iconadmin{
+  position: relative;
+  left: 40%;
+}
 #footer2{
   text-align: center ;
   padding: 1rem 0 0.1rem;
@@ -265,9 +268,6 @@ body,html{
   }
   }
 
-
-
-
 .footer-icon {
     padding: 0 0.7rem;
     color: #d56756;
@@ -276,6 +276,8 @@ body,html{
 .footer-icon:hover {
     color: #ff5137;
 }
+
+
 
 
 /*Contact Main*/
@@ -1218,6 +1220,16 @@ input::placeholder{
   .gato-perro {
     border-top: 2px solid #fff;
   }
+  .checkbox input[type=checkbox]{
+     
+    transform: scale(1.5);
+  }
+
+  .gato-perro input[type=radio]{
+    display: block;
+    transform: scale(2);
+  }
+
 
 /********************* Ingreso de nuevos Objetos **********************/
 
@@ -1228,12 +1240,15 @@ input::placeholder{
   color: #fff;
 }
 .singForm{
+  
+  align-content: center;
+  margin-top: 0%;
   overflow: hidden;
-  max-width: 450px;
-  height: auto;
+  max-height: min-content;
+  max-width:max-content;
   background: #fff;
-  padding: 30px;
-  border-radius: 5px;
+  padding: 30px;  
+ 
 }
 .singForm .title-text{
   display: flex;
@@ -1248,7 +1263,7 @@ input::placeholder{
   transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
 }
 #key{
-  margin: auto 18%;
+  margin: auto 28%;
 }
 .icon{
   
