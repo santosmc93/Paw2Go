@@ -25,9 +25,9 @@ boton.addEventListener("click", function enviar(e){
     let gato = document.getElementById("gato").checked;
     let perro = document.getElementById("perro").checked;
     let formulario = document.getElementById("form");
-    let cantidad = 10;
+    let cantidad = document.getElementById("cantidad").value;
 
-    if(nombre == "" || descripcion == "" || precio == "" || imagen == ""){
+    if(nombre == "" || descripcion == "" || precio == "" || imagen == "" || cantidad == ""){
         alert("All fields are mandatory");
     }else {
         if(gato == false && perro == false){
