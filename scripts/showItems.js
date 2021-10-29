@@ -138,10 +138,9 @@
                 const itemHTML = `
                 <li class="post" data-category="All ">
                 <article>
-                  <div class="container-card">
-                    <div class="card" style="float: left;">
+                    <div class="card">
                       <div class="inner-card"> <img src="`+ item.url_image +`" class="img-fluid rounded">
-                        <div class="d-flex justify-content-between align-items-center mt-3 px-2">
+                        <div class="d-flex justify-content-between align-items-center">
                           
                           <h4>`+ item.product_name +`</h4>
                         </div>
@@ -158,9 +157,9 @@
                               class="fa fa-shopping-cart"></i> </a> </div>
                       </div>
                     </div>
-                  </div>
                 </article>
-              </li>`;
+              </li>`
+              ;
                 const itemsContainer = document.getElementById("lista-objetos");
                 itemsContainer.innerHTML += itemHTML;
             }

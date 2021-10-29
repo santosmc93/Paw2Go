@@ -290,7 +290,12 @@
   background-color: #D89181;
   width: 400px;
   padding: 10px;
-  border: 1px solid #eee
+  border: 1px solid #eee;
+}
+
+.card img {
+  height: 20rem;
+  width: 100%;
 }
 
 .inner-card {
