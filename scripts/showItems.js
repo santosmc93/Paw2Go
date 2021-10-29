@@ -79,29 +79,29 @@
     // }
     // object += `">
     //   <article>
-    //     <div class="container-card">
-    //       <div class="card" style="float: left;">
-    //         <div class="inner-card"> <img src="`+ auxArticulo.image +`" class="img-fluid rounded">
-    //           <div class="d-flex justify-content-between align-items-center mt-3 px-2">
+    //     <div class="container-card">     abre coneiner card
+    //       <div class="card" style="float: left;">    abre card
+    //         <div class="inner-card"> <img src="`+ auxArticulo.image +`" class="img-fluid rounded"> //abre incard
+    //           <div class="d-flex justify-content-between align-items-center mt-3 px-2"> //abre nombre del objeto
                 
     //             <h4>`+ auxArticulo.name +`</h4>
-    //           </div>
-    //           <ol class="post-categories"> `;
-    //           for(let i = 0; i < categories.length; i++){
-    //             object += '<li> '+
-    //             '            <a href="">'+categories[i] +'</a> '+
-    //             '          </li> ';
-    //         };
-    //          object += ` </ol>
-    //           <div class="mt-2 px-2"> <small>`+ auxArticulo.description +`</small> </div>
-    //           <div class="px-2">
-    //             <h3>$`+ auxArticulo.price +`</h3>
-    //           </div>
+    //           </div>                                                                     //cierre nombre del objeto
+    //           <ol class="post-categories"> `;                                            //categorias
+    //           for(let i = 0; i < categories.length; i++){                                //categorias
+    //             object += '<li> '+                                                       //categorias
+    //             '            <a href="">'+categories[i] +'</a> '+                        //categorias
+    //             '          </li> ';                                                      //categorias
+    //         };                                                                           //categorias
+    //          object += ` </ol>                                                           //categorias
+    //           <div class="mt-2 px-2"> <small>`+ auxArticulo.description +`</small> </div> //descripcion
+    //           <div class="px-2">                             //abre  precio de articulo
+    //             <h3>$`+ auxArticulo.price +`</h3>    
+    //           </div>                                         //cierre precio de articulo
     //           <div class="px-2 mt-3"> <a href="#" class="btn btn-light"> <span class="text">Add to cart</span> <i
-    //                 class="fa fa-shopping-cart"></i> </a> </div>
-    //         </div>
-    //       </div>
-    //     </div>
+    //                 class="fa fa-shopping-cart"></i> </a> </div> //abre y cierre de boton
+    //         </div>           //cierra incard
+    //       </div>             //cierra card
+    //     </div>               //cierra contenier card
     //   </article>
     // </li>
     //   `;
@@ -126,15 +126,21 @@
             });
 
             function addItem(item){
-                const itemHTML ='<div class="card">' +
-                                '<img src = "'+ item.url_image +'">' +
+                const itemHTML = 
+                                '<div class="container-card">' + 
+                                '<div class="card">' + 
+                                '<div class="inner-card">' +
+                                '<img src = "'+ item.url_image +'" class="img-fluid rounded">' +
                                 '<div class="card-body">' +
-                                '<h3 class="card-body">Product Name: ' + item.product_name + '</h3>' + 
+                                '<h3 class="card-title">Product Name: ' + item.product_name + '</h3>' + 
                                 '<p class="card-text">Product Description: ' + item.product_description + '</p>' +
                                 '<p>Product price: ' + item.product_price + '</p>' + 
                                 '<p>Quantity Products: ' + item.product_qty + '</p>' + 
                                 '</div>' +
+                                '</div>' + 
+                                '</div>' +
                                 '</div>';
+
                 const itemsContainer = document.getElementById("lista-objetos");
                 itemsContainer.innerHTML += itemHTML;
             }
