@@ -138,18 +138,18 @@
                 const itemHTML = `
                 <li class="post" data-category="All ">
                 <article>
-                    <div class="card">
-                      <div class="inner-card"> <img src="`+ item.url_image +`" class="img-fluid rounded">
+                    <div class="card" style="width:300px; height: 650px;">
+                      <div class="inner-card"> <img style="width:250px; height: 250px;" src="`+ item.url_image +`" class="img-fluid rounded">
                         <div class="d-flex justify-content-between align-items-center">
                           
-                          <h4>`+ item.product_name +`</h4>
+                          <div style="display:flex; justify-content:center; align-items:center; height: 100px; margin: 10px 0;"><h4>`+ item.product_name +`</h4></div>
                         </div>
           
                         <ol class="post-categories">
           
                         </ol>
           
-                        <div class="mt-2 px-2"> <small>`+ item.product_description +`</small> </div>
+                        <div class="mt-2 px-2" style="height: 160px; <small>`+ item.product_description +`</small> </div>
                         <div class="px-2">
                           <h3>$`+ item.product_price +`</h3>
                         </div>
