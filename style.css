@@ -247,10 +247,7 @@ body,html{
     height: 5rem;
     bottom: 0;
 }
-#iconadmin{
-  position: relative;
-  left: 40%;
-}
+
 #footer2{
   text-align: center ;
   padding: 1rem 0 0.1rem;
@@ -258,7 +255,7 @@ body,html{
   background-color: #fff;
   width: 100%;
   bottom: 0;
-  position: absolute;
+  position: sticky;
 }
 
 
@@ -268,6 +265,10 @@ body,html{
   }
   }
 
+  .icons-container{
+    position: relative;
+    left: 5%;
+  } 
 .footer-icon {
     padding: 0 0.7rem;
     color: #d56756;
@@ -277,8 +278,16 @@ body,html{
     color: #ff5137;
 }
 
+.iconadmin{
+  color: #d56756;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
 
-
+.iconadmin:hover{
+  color: #ff5137;
+}
 
 /*Contact Main*/
 #contact {
@@ -468,6 +477,30 @@ body,html{
 }
 
 /*Contact MediaQuery*/
+@media (max-width: 1400px) {
+  #iconadmin{
+    position: relative;
+    left: 35%;
+  }
+  }
+@media (max-width: 930px) {
+  #iconadmin{
+    position: relative;
+    left: 30%;
+  }
+  }
+@media (max-width: 690px) {
+  #iconadmin{
+    position: relative;
+    left: 20%;
+  }
+  }
+@media (max-width: 450px) {
+  #iconadmin{
+    position: relative;
+    left: 5%;
+  }
+  }
 @media (max-width: 1200px) {
   .conctact-container {
     max-width: 90%;

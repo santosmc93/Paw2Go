@@ -79,7 +79,7 @@ for(let cont=0; cont< i ; cont++){
   }
 }
 if(check){
-  location.href="/addObject.html";
+  location.href="/addItem.html";
 }else{
   alert(" Username or Password incorrect");
 }
