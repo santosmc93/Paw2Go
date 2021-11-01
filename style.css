@@ -247,10 +247,6 @@ body,html{
     height: 5rem;
     bottom: 0;
 }
-#iconadmin{
-  position: relative;
-  left: 40%;
-}
 
 #footer2{
   text-align: center ;
@@ -269,6 +265,10 @@ body,html{
   }
   }
 
+  .icons-container{
+    position: relative;
+    left: 5%;
+  } 
 .footer-icon {
     padding: 0 0.7rem;
     color: #d56756;
@@ -278,8 +278,16 @@ body,html{
     color: #ff5137;
 }
 
+.iconadmin{
+  color: #d56756;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
 
-
+.iconadmin:hover{
+  color: #ff5137;
+}
 
 /*Contact Main*/
 #contact {
