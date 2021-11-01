@@ -247,10 +247,11 @@ body,html{
     height: 5rem;
     bottom: 0;
 }
-#iconadmin{
+/* #iconadmin{
   position: relative;
   left: 40%;
-}
+  margin-right: 80px;
+}  */
 
 #footer2{
   text-align: center ;
@@ -278,8 +279,16 @@ body,html{
     color: #ff5137;
 }
 
+.iconadmin{
+  color: #d56756;
+  position: relative;
+  left: 15rem;
+  align-self: end;
+}
 
-
+.iconadmin:hover{
+  color: #ff5137;
+}
 
 /*Contact Main*/
 #contact {
