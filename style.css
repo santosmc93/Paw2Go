@@ -247,11 +247,6 @@ body,html{
     height: 5rem;
     bottom: 0;
 }
-/* #iconadmin{
-  position: relative;
-  left: 40%;
-  margin-right: 80px;
-}  */
 
 #footer2{
   text-align: center ;
@@ -270,6 +265,10 @@ body,html{
   }
   }
 
+  .icons-container{
+    position: relative;
+    left: -14%;
+  }
 .footer-icon {
     padding: 0 0.7rem;
     color: #d56756;
@@ -282,8 +281,6 @@ body,html{
 .iconadmin{
   color: #d56756;
   position: relative;
-  left: 15rem;
-  align-self: end;
 }
 
 .iconadmin:hover{
