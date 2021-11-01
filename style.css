@@ -251,6 +251,7 @@ body,html{
   position: relative;
   left: 40%;
 }
+
 #footer2{
   text-align: center ;
   padding: 1rem 0 0.1rem;
@@ -258,7 +259,7 @@ body,html{
   background-color: #fff;
   width: 100%;
   bottom: 0;
-  position: absolute;
+  position: sticky;
 }
 
 
@@ -468,6 +469,30 @@ body,html{
 }
 
 /*Contact MediaQuery*/
+@media (max-width: 1400px) {
+  #iconadmin{
+    position: relative;
+    left: 35%;
+  }
+  }
+@media (max-width: 930px) {
+  #iconadmin{
+    position: relative;
+    left: 30%;
+  }
+  }
+@media (max-width: 690px) {
+  #iconadmin{
+    position: relative;
+    left: 20%;
+  }
+  }
+@media (max-width: 450px) {
+  #iconadmin{
+    position: relative;
+    left: 5%;
+  }
+  }
 @media (max-width: 1200px) {
   .conctact-container {
     max-width: 90%;
