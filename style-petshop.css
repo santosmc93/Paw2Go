@@ -317,6 +317,13 @@
   height: 500px;
 }
 
+.card img{
+  width: fit-content;
+  max-height: 50%;
+  min-height: 20%;
+  height: auto;
+}
+
 .price {
   color: grey;
   font-size: 22px;

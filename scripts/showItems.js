@@ -167,7 +167,7 @@
               // </li>`
               // ;
 
-              innerHTML = `
+              itemHTML = `
               <li class="post" data-category="All">
         <article>
           <div class="card">
