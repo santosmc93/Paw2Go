@@ -135,31 +135,57 @@
                 //                 '<p>Quantity Products: ' + item.product_qty + '</p>' + 
                 //                 '</div>' +
                 //                 '</div>';
-                const itemHTML = `
-                <li class="post" data-category="All ">
-                <article>
-                    <div class="card" style="width:300px; height: 650px;">
-                      <div class="inner-card"> <img style="width:250px; height: 250px;" src="`+ item.url_image +`" class="img-fluid rounded">
-                        <div class="d-flex justify-content-between align-items-center">
+              //   const itemHTML = `
+              //   <li class="post" data-category="All ">
+              //   <article>
+              //       <div class="card" style="width:300px; height: 650px;">
+              //         <div class="inner-card"> <img style="width:250px; height: 250px;" src="`+ item.url_image +`" class="img-fluid rounded">
+              //           <div class="d-flex justify-content-between align-items-center">
                           
-                          <div style="display:flex; justify-content:center; align-items:center; height: 100px; margin: 10px 0;"><h4>`+ item.product_name +`</h4></div>
-                        </div>
+              //             <div style="display:flex; justify-content:center; align-items:center; height: 100px; margin: 10px 0;"><h4>`+ item.product_name +`</h4></div>
+              //           </div>
           
-                        <ol class="post-categories">
+              //           <ol class="post-categories">
           
-                        </ol>
+              //           </ol>
           
-                        <div class="mt-2 px-2" style="height: 160px; <small>`+ item.product_description +`</small> </div>
-                        <div class="px-2">
-                          <h3>$`+ item.product_price +`</h3>
-                        </div>
-                        <div class="px-2 mt-3"> <a href="#" class="btn btn-light"> <span class="text">Add to cart</span> <i
-                              class="fa fa-shopping-cart"></i> </a> </div>
-                      </div>
-                    </div>
-                </article>
-              </li>`
-              ;
+              //           <div class="mt-2 px-2" style="height: 160px; <small>`+ item.product_description +`</small> </div>
+              //           <div class="px-2">
+              //             <h3>$`+ item.product_price +`</h3>
+              //           </div>
+              //           <div class="px-2 mt-3"> 
+
+              //           <a href="#" class="btn btn-light"> 
+              //             <span class="text">Add to cart</span> 
+              //                 class="fa fa-shopping-cart"></i>
+              //           </a>
+                        
+              //           </div>
+              //         </div>
+              //       </div>
+              //   </article>
+              // </li>`
+              // ;
+
+              innerHTML = `
+              <li class="post" data-category="All">
+        <article>
+          <div class="card">
+            <img src="`+ item.url_image +`" alt="Denim Jeans" style="width:100%">
+            <h1>`+ item.product_name +`</h1>
+            <p class="price">$`+ item.product_price +`</p>
+            <p class="card-description">`+ item.product_description +`</p>
+            <div class="button-wraper">
+      
+              <a href="#" class="btn btn-light">
+                <span class="text">Add to cart</span>
+                <i class="fa fa-shopping-cart"></i>
+              </a>
+      
+            </div>
+          </div>
+        </article>
+      </li>`;
                 const itemsContainer = document.getElementById("lista-objetos");
                 itemsContainer.innerHTML += itemHTML;
             }
