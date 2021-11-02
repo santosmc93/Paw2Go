@@ -1,12 +1,9 @@
+let botonRegistrar = document.getElementById("sign-up-btn")
 
-//Evento para inicializar el evento de registro de usuarios1
-
-document.getElementById("sign-up-btn").addEventListener("click", registerUser);
-
-//Funcion de registro de usuario
-function registerUser() {
+botonRegistrar.addEventListener("click", function crearUsuario(e){
+    e.preventDefault();
     // obtener valores del register
-    let fullName = document.getElementById("full-name"). value;
+    let fullName = document.getElementById("full-name").value;
     let email = document.getElementById("email").value;
     let name = document.getElementById("username1").value;
     let password1 = document.getElementById("password1").value;
@@ -14,28 +11,111 @@ function registerUser() {
 
     if (password2 != password1) {
         alert("Passwords not match");
-    } if (password1.length < 8) {
+    } if (password1.length < 4) {
         alert("Password must have at least 8 characters");
     } else {
         //Encriptacion de la contrasena
         password1 = btoa(password1);
         // objeto con los datos que se obtuvieron del registerUser
         var user = new Object();
-        user.name = name;
-        user.mail = email;
+        user.user_name = name;
+        user.email = email;
         user.password = password1;
-        user.fullname = fullName;
-        //Guarda las variables en formato JSON en una nueva variable llamada local
-        var local = JSON.stringify(user);
-        localStorage.setItem(`user data`, local);
-        // alert que se creo la cuenta
-        alert("You have sucesfully created a account");
-    }
-}
+        user.full_name = fullName;
 
-//Validacion al hacer login
-var attempt = 3; // Variable para contar los intentos restantes
+        let registerUserJson = JSON.stringify(user);
+
+        fetch(`http://localhost:8080/users/display/${name}`, {  
+        method: 'GET',
+        })
+            .then(res => res.json())
+            .then(data => { 
+                if(name == data.user_name){
+                  alert("Username is already in use");
+                }
+        })
+        .catch((error) => {
+          console.log(error);
+          fetch('http://localhost:8080/users/addnew', {  
+                method: 'POST',
+                body: registerUserJson,
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+              })
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data);
+                              
+                })
+                .catch((error) => {
+                  alert("You have sucesfully created an account");
+              });
+        });
+    }
+});
+
+    // obtener valores del register
+     //let fullName = document.getElementById("full-name").value;
+    // let email = document.getElementById("email").value;
+     //document.getElementById("username1").value;
+    // let password1 = document.getElementById("password1").value;
+    // let password2 = document.getElementById("password2").value;
+    
+    // // verificacion de contraseñas
+    // if (password2 != password1) {
+    //     alert("Passwords not match");
+    // } if (password1.length < 8) {
+    //     alert("Password must have at least 8 characters");
+    // } else {
+        //Encriptacion de la contrasena
+        //password1 = btoa(password1);
+        // objeto con los datos que se obtuvieron del registerUser
+        //var user = new Object();
+        //user.user_name = name;
+        //user.email = email;
+        //user.password = password1;
+        //user.full_name = fullName;
+        
+       // primer boton con base de datos 
+
+       //let registerUserJson = JSON.stringify(user);
+    
+    //    fetch(`http://localhost:8080/users/display/${name}`, {  
+    //     method: 'GET',
+    //     })
+    //         .then(res => res.json())
+    //         .then(data => { 
+    //             if(name == data.user_name){
+    //               alert("Username is already in use");
+                  
+    //             }
+    //     })
+    //     .catch((error) => {
+    //       console.log(error);
+    //       fetch('http://localhost:8080/users/addnew', {  
+    //             method: 'POST',
+    //             body: registerUserJson,
+    //             headers: {
+    //                 'Content-Type': 'application/json'
+    //             }
+    //           })
+    //                 .then(res => res.json())
+    //                 .then(data => {
+    //                     console.log(data);
+                              
+    //             })
+    //             .catch((error) => {
+    //               alert("You have sucesfully created an account");
+    //           });
+    //     });
+    //}
+
+
+
+
 //Evento para inicializar el evento de ingreso de usuarios
+
 document.getElementById("sign-in-btn").addEventListener("click", function validate(e){
     e.preventDefault();
     var username = document.getElementById("username").value;
