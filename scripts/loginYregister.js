@@ -15,14 +15,13 @@ document.getElementById("registrar").addEventListener("click", function crear (e
   }else{ 
     //encriptacion de contraseñas
     password1 = btoa(password1);
-    // variable que sirve para saber si un nombre de usuario ya esta dado de alta
-    var repetido = false;
     // objeto con los datos que se obtuvieron del fromulario de register
     var user = new Object();
     user.admin_username = name;
     user.admin_email= email;
     user.admin_password = password1;
 
+     // conexion con base de datos  register 
     let userJson = JSON.stringify(user);
 
     fetch(`http://localhost:8080/admin/display/${name}`, {  
@@ -32,7 +31,7 @@ document.getElementById("registrar").addEventListener("click", function crear (e
                 .then(data => { 
                     if(name == data.admin_username){
                       alert("Username is already in use");
-                      console.log("repetido es: ", repetido);
+                  
                     }
             })
             .catch((error) => {
@@ -53,16 +52,14 @@ document.getElementById("registrar").addEventListener("click", function crear (e
                     })
                     .catch((error) => {
                       alert("You have sucesfully created an account");
+                      location.href="/login.html";
                   });
             });
-
-   // conexion con base de datos 
-   
     }
   });
 
-// acceder a la base de datos
-let check = false;
+// acceder a la base de datos login
+
 document.getElementById("LOGIN").addEventListener("click", function Login (e){
   e.preventDefault();
 
@@ -70,21 +67,21 @@ document.getElementById("LOGIN").addEventListener("click", function Login (e){
   let password = document.getElementById("password").value;
   password = btoa(password);
 
-fetch('http://localhost:8080/admin/display', {  
+  fetch(`http://localhost:8080/admin/display/${Username}`, { 
             method: 'GET',
             })
                 .then(res => res.json())
                 .then(data => { 
-                    console.log(data[0].admin_username);
-                    
+                  if(password == data.admin_password && Username == data.admin_username){
+                    alert ("You have logged in successfuly")
+                    location.href="/addItem.html";
+                  }else{
+                    alert(" Username or Password incorrect try again");
+                  }
+                    //console.log(data.admin_password);
             })
             .catch((error) => {
                 console.error("error",error);
-                console.log("fallo :(");
+                alert("ser does not exists");
             }); 
-            if(check){
-              location.href="/addItem.html";
-            }else{
-              alert(" Username or Password incorrect");
-            }
           });
