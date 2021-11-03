@@ -75,7 +75,7 @@ document.getElementById("sign-in-btn").addEventListener("click", function valida
                     console.log(data.password);
                   if(password == data.password && username == data.userName){
                     alert ("You have logged in successfuly")
-                    location.href="./index.html";
+                    location.href="./index-login-html";
                   }else{
                     alert(" Username or Password incorrect try again");
                   }
