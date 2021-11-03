@@ -333,6 +333,12 @@
   width: 100%;
   font-size: 18px;
 }
+
+.card img{
+  width: fit-content;
+  max-height: 40%;
+  min-height: 20%;
+}
 .shop-button{
   position:relative;
   bottom:0;
@@ -367,7 +373,26 @@
   margin-top: auto;
 }
 
+/* style scroll */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
   
   
   
