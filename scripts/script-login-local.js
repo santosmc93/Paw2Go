@@ -17,8 +17,8 @@ botonRegistrar.addEventListener("click", function crearUsuario(e){
         //Encriptacion de la contrasena
         password1 = btoa(password1);
         // objeto con los datos que se obtuvieron del registerUser
-        var user = new Object();
-        user.user_name = name;
+        var user = new Object(); //Siendo user.attr, attr debe coincidir con el nombre de la variable en Java
+        user.userName = name;
         user.email = email;
         user.password = password1;
         user.full_name = fullName;
@@ -50,93 +50,38 @@ botonRegistrar.addEventListener("click", function crearUsuario(e){
                 })
                 .catch((error) => {
                   alert("You have sucesfully created an account");
+                  location.href="/login-user.html";
               });
         });
     }
 });
 
-    // obtener valores del register
-     //let fullName = document.getElementById("full-name").value;
-    // let email = document.getElementById("email").value;
-     //document.getElementById("username1").value;
-    // let password1 = document.getElementById("password1").value;
-    // let password2 = document.getElementById("password2").value;
-    
-    // // verificacion de contraseñas
-    // if (password2 != password1) {
-    //     alert("Passwords not match");
-    // } if (password1.length < 8) {
-    //     alert("Password must have at least 8 characters");
-    // } else {
-        //Encriptacion de la contrasena
-        //password1 = btoa(password1);
-        // objeto con los datos que se obtuvieron del registerUser
-        //var user = new Object();
-        //user.user_name = name;
-        //user.email = email;
-        //user.password = password1;
-        //user.full_name = fullName;
-        
-       // primer boton con base de datos 
-
-       //let registerUserJson = JSON.stringify(user);
-    
-    //    fetch(`http://localhost:8080/users/display/${name}`, {  
-    //     method: 'GET',
-    //     })
-    //         .then(res => res.json())
-    //         .then(data => { 
-    //             if(name == data.user_name){
-    //               alert("Username is already in use");
-                  
-    //             }
-    //     })
-    //     .catch((error) => {
-    //       console.log(error);
-    //       fetch('http://localhost:8080/users/addnew', {  
-    //             method: 'POST',
-    //             body: registerUserJson,
-    //             headers: {
-    //                 'Content-Type': 'application/json'
-    //             }
-    //           })
-    //                 .then(res => res.json())
-    //                 .then(data => {
-    //                     console.log(data);
-                              
-    //             })
-    //             .catch((error) => {
-    //               alert("You have sucesfully created an account");
-    //           });
-    //     });
-    //}
-
-
-
-
-//Evento para inicializar el evento de ingreso de usuarios
-
-document.getElementById("sign-in-btn").addEventListener("click", function validate(e){
+// acceder a la base de datos login
+  document.getElementById("sign-in-btn").addEventListener("click", function singup (e){
     e.preventDefault();
+
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
     password = btoa(password);
-    let usuario = JSON.parse(localStorage.getItem(`user data`));
-    if (username == usuario.name && password == usuario.password){ 
-    alert ("You sign in successfully");
-    window.location = "index.html"; // Redirecting to other page.
-    return false;
-    }
-    else{
-    attempt --;// Decrementa en uno la cantidad de intentos
-    alert("You have " + attempt +" attempts left");
-    // Desabilita los campos tras tres intentos fallidos de login
-    if( attempt == 0){
-    document.getElementById("username").disabled = true;
-    document.getElementById("password").disabled = true;
-    document.getElementById("submit").disabled = true;
-    return false;
-    }
-    }
-    });
-//Funcion para hacer login
+
+    console.log(password)
+    fetch(`http://localhost:8080/users/display/${username}`, { 
+             method: 'GET',
+             })
+                 .then(res => res.json())
+                 .then(data => {
+                     
+                   if(password == data.password && username == data.userName){
+                     alert ("You have logged in successfuly");
+                    location.href="/index.html";
+                  }else{
+                     alert("Username or Password incorrect try again");
+                  }
+
+                 })
+             .catch((error) => {
+                console.error("error",error);
+                 alert("User does not exists");
+             }); 
+          });
+

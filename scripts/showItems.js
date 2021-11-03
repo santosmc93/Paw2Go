@@ -172,7 +172,7 @@
         <article>
           <div class="card">
             <img src="`+ item.url_image +`" alt="Denim Jeans" style="width:100%">
-            <h1>`+ item.product_name +`</h1>
+            <h4>`+ item.product_name +`</h4>
             <p class="price">$`+ item.product_price +`</p>
             <p class="card-description">`+ item.product_description +`</p>
             <div class="button-wraper">

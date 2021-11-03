@@ -78,10 +78,10 @@ document.getElementById("LOGIN").addEventListener("click", function Login (e){
                   }else{
                     alert(" Username or Password incorrect try again");
                   }
-                    //console.log(data.admin_password);
+                
             })
             .catch((error) => {
                 console.error("error",error);
-                alert("ser does not exists");
+                alert("user does not exists");
             }); 
           });

@@ -256,7 +256,8 @@ body,html{
   background-color: #fff;
   width: 100%;
   bottom: 0;
-  position: absolute;
+  /* Cambiar la posicion de este footer, estaba en absolute */
+  position: static;
 }
 
 
