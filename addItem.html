@@ -62,96 +62,101 @@
 
     <main class="main-objetos">
         <div class="contenido-formulario">
-        <h2 class="titulo">Add New Items</h2>
-        <form class="formulario" id="form">
-            <div class="campo">
-                <label for="">Product Name</label>
-                <input class="form-control" type="text" placeholder="Product Name Here" aria-label=".form-control example" id="nombre">
-            </div>
-            <div class="campo">
-                <label for="">Product Description</label>
-                <input class="form-control" type="text" placeholder="Product Description Here" aria-label="default input example" id="descripcion">   
-            </div>
-            <div class="checkbox">
+            <h2 class="titulo">Add New Items</h2>
+            <form class="formulario" id="form">
                 <div class="campo">
-                    <label for="">Health-&-wellness</label>
-                    <input type="checkbox" id="HyW">   
+                    <label for="">Product Name</label>
+                    <input class="form-control" type="text" placeholder="Product Name Here"
+                        aria-label=".form-control example" id="nombre">
                 </div>
                 <div class="campo">
-                    <label for="">Training-and-cleaning</label>
-                    <input type="checkbox" id="TyC">   
+                    <label for="">Product Description</label>
+                    <input class="form-control" type="text" placeholder="Product Description Here"
+                        aria-label="default input example" id="descripcion">
+                </div>
+                <div class="checkbox">
+                    <div class="campo">
+                        <label for="">Health-&-wellness</label>
+                        <input type="checkbox" id="HyW">
+                    </div>
+                    <div class="campo">
+                        <label for="">Training-and-cleaning</label>
+                        <input type="checkbox" id="TyC">
+                    </div>
+                    <div class="campo">
+                        <label for="">Home</label>
+                        <input type="checkbox" id="Home">
+                    </div>
+                    <div class="campo">
+                        <label for="">Cat-Litter-and-accesories</label>
+                        <input type="checkbox" id="SandA">
+                    </div>
+                    <div class="campo">
+                        <label for="">Transporters-and-travel</label>
+                        <input type="checkbox" id="TandT">
+                    </div>
+                    <div class="campo">
+                        <label for="">Toys</label>
+                        <input type="checkbox" id="Toys">
+                    </div>
+                    <div class="campo">
+                        <label for="">Grooming</label>
+                        <input type="checkbox" id="Grooming">
+                    </div>
+                    <div class="campo">
+                        <label for="">Dental-care</label>
+                        <input type="checkbox" id="Dental">
+                    </div>
+                    <div class="campo">
+                        <label for="">Necklaces-leashes-and-clothes</label>
+                        <input type="checkbox" id="NandC">
+                    </div>
+                    <div class="campo">
+                        <label for="">Dry-food</label>
+                        <input type="checkbox" id="DryFood">
+                    </div>
+                    <div class="campo">
+                        <label for="">Wet-food</label>
+                        <input type="checkbox" id="WetFood">
+                    </div>
+                </div>
+                <div class="gato-perro">
+                    <div class="campo">
+                        <label for="">CAT</label>
+                        <input type="radio" id="gato" name="mascota">
+                    </div>
+                    <div class="campo">
+                        <label for="">DOG</label>
+                        <input type="radio" id="perro" name="mascota">
+                    </div>
                 </div>
                 <div class="campo">
-                    <label for="">Home</label>
-                    <input type="checkbox" id="Home">   
+                    <label for="">Product Price</label>
+                    <input class="form-control" type="text" placeholder="Product Price Here"
+                        aria-label=".form-control-sm example" id="precio">
                 </div>
-                <div class="campo">
-                    <label for="">Cat-Litter-and-accesories</label>
-                    <input type="checkbox" id="SandA">   
-                </div>
-                <div class="campo">
-                    <label for="">Transporters-and-travel</label>
-                    <input type="checkbox" id="TandT">   
-                </div>
-                <div class="campo">
-                    <label for="">Toys</label>
-                    <input type="checkbox" id="Toys">   
-                </div>
-                <div class="campo">
-                    <label for="">Grooming</label>
-                    <input type="checkbox" id="Grooming">   
-                </div>
-                <div class="campo">
-                    <label for="">Dental-care</label>
-                    <input type="checkbox" id="Dental">   
-                </div>
-                <div class="campo">
-                    <label for="">Necklaces-leashes-and-clothes</label>
-                    <input type="checkbox" id="NandC">   
-                </div>
-                <div class="campo">
-                    <label for="">Dry-food</label>
-                    <input type="checkbox" id="DryFood">   
-                </div>
-                <div class="campo">
-                    <label for="">Wet-food</label>
-                    <input type="checkbox" id="WetFood">   
-                </div>
-            </div>
-            <div class="gato-perro">
-                <div class="campo">
-                    <label for="">CAT</label>
-                    <input type="radio" id="gato" name="mascota">   
-                </div>
-                <div class="campo">
-                    <label for="">DOG</label>
-                    <input type="radio" id="perro" name="mascota">   
-                </div>
-            </div>
-            <div class="campo">
-                <label for="">Product Price</label>
-                <input class="form-control" type="text" placeholder="Product Price Here" aria-label=".form-control-sm example" id="precio">
-            </div>
 
-            <div class="campo">
-                <label for="">URL Image Product</label>
-                <input class="form-control" type="text" placeholder="Product URL Image" aria-label=".form-control-sm example" id="link">
+                <div class="campo">
+                    <label for="">URL Image Product</label>
+                    <input class="form-control" type="text" placeholder="Product URL Image"
+                        aria-label=".form-control-sm example" id="link">
+                </div>
+                <div class="campo">
+                    <label for="">Quantity</label>
+                    <input class="form-control" type="number" min="1" placeholder="Products quantity"
+                        aria-label=".form-control-sm example" id="cantidad">
+                </div>
+            </form>
+
+            <div class="botones">
+                <button id="boton">Send</button>
             </div>
-            <div class="campo">
-                <label for="">Quantity</label>
-                <input class="form-control" type="number" min="1" placeholder="Products quantity" aria-label=".form-control-sm example" id="cantidad">
-            </div>
-        </form>
-        
-        <div class="botones">
-            <button id="boton">Send</button>
-        </div>
         </div>
 
         <div id="list-items">
 
         </div>
-        
+
     </main>
 
     <!--Footer-->
