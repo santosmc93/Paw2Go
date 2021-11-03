@@ -24,8 +24,15 @@ body,html{
     width: 100%;
     padding: 20px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 0px;
+    background-image: url(./img/bg-loginSignup.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 80%;
 }
+
 
 .container-all{
     width: 100%;
