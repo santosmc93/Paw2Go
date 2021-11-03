@@ -197,9 +197,10 @@
       </div>
     </section>
 
-  <!--================    MODAL PERRO Y GATO      ===========-->
+    <!--================    MODAL PERRO Y GATO      ===========-->
 
-    <!-- MODAL PERRO -->
+    <!-- MODAL GATO-->
+
     <!-- ModalDog -->
     <div
       class="modal fade"
@@ -225,7 +226,6 @@
                   <div class="col-lg-10">
                     <input
                       class="formulary-label"
-                      id="customerName"
                       type="text"
                       name="Name"
                       placeholder="Your Name"
@@ -235,7 +235,6 @@
                   <div class="col-lg-5">
                     <input
                       class="formulary-label"
-                      id="customerPhone"
                       type="number"
                       name="Name"
                       placeholder="Phone Number 1"
@@ -245,7 +244,6 @@
                   <div class="col-lg-5">
                     <input
                       class="formulary-label"
-                      id="customerPhoneAlter"
                       type="number"
                       name="Name"
                       placeholder="Phone Number 2"
@@ -257,7 +255,6 @@
                   <div class="col-lg-10">
                     <input
                       class="formulary-label"
-                      id="customerEmail"
                       type="email"
                       name="Name"
                       placeholder="Email address"
@@ -270,7 +267,6 @@
                   <div class="col-lg-5">
                     <input
                       class="formulary-label"
-                      id="dogName"
                       type="text"
                       name="Name"
                       placeholder="Dog´s Name"
@@ -280,7 +276,6 @@
                   <div class="col-lg-5">
                     <input
                       class="formulary-label"
-                      id="dogAge"
                       list="age"
                       name="Dog's Age"
                       placeholder="Dog´s Age"
@@ -299,7 +294,6 @@
                   <div class="col-lg-10">
                     <input
                       class="formulary-label"
-                      id="dogBreed"
                       list="DogBreed"
                       name="Breed"
                       placeholder="Breed"
@@ -500,10 +494,10 @@
                 </div>
                 <div class="row row1">
                   <div class="col-lg-5">
-                    <input class="formulary-label" type="date" name="" id="dogDate" />
+                    <input class="formulary-label" type="date" name="" id="" />
                   </div>
                   <div class="col-lg-5">
-                    <input class="formulary-label" type="time" name="" id="dogHour" />
+                    <input class="formulary-label" type="time" name="" id="" />
                   </div>
                 </div>
               </div>
@@ -512,14 +506,17 @@
               <textarea
                 class="textboxGrooming"
                 name="textGrooming"
-                id="additionalInstructions"
+                id=""
                 cols="30"
                 rows="4"
               ></textarea>
-              <button type="submit"
+
+              <input
                 class="SubmitButton"
-                id="dogSubmitButton"
-              >Submit</button>
+                type="button"
+                name="submit"
+                value="SUBMIT"
+              />
             </div>
           </div>
         </div>
@@ -554,7 +551,6 @@
                   <div class="col-lg-10">
                     <input
                       class="formulary-label"
-                      id="customerName"
                       type="text"
                       name="Name"
                       placeholder="Your Name"
@@ -564,7 +560,6 @@
                   <div class="col-lg-5">
                     <input
                       class="formulary-label"
-                      id="customerPhone"
                       type="number"
                       name="Name"
                       placeholder="Phone Number 1"
@@ -574,7 +569,6 @@
                   <div class="col-lg-5">
                     <input
                       class="formulary-label"
-                      id="customerPhoneAlter"
                       type="number"
                       name="Name"
                       placeholder="Phone Number 2"
@@ -586,7 +580,6 @@
                   <div class="col-lg-10">
                     <input
                       class="formulary-label"
-                      id="customerEmail"
                       type="email"
                       name="Name"
                       placeholder="Email address"
@@ -599,7 +592,6 @@
                   <div class="col-lg-5">
                     <input
                       class="formulary-label"
-                      id="catName"
                       type="text"
                       name="Name"
                       placeholder="Cat´s Name"
@@ -609,7 +601,6 @@
                   <div class="col-lg-5">
                     <input
                       class="formulary-label"
-                      id="catAge"
                       list="age"
                       name="Dog's Age"
                       placeholder="Cat´s Age"
@@ -620,7 +611,6 @@
                   <div class="col-lg-10">
                     <input
                       class="formulary-label"
-                      id="catBreed"
                       list="CatBreed"
                       name="Breed"
                       placeholder="Breed"
@@ -709,10 +699,10 @@
                 </div>
                 <div class="row row1">
                   <div class="col-lg-5">
-                    <input class="formulary-label" type="date" name="" id="catDate" />
+                    <input class="formulary-label" type="date" name="" id="" />
                   </div>
                   <div class="col-lg-5">
-                    <input class="formulary-label" type="time" name="" id="catHour" />
+                    <input class="formulary-label" type="time" name="" id="" />
                   </div>
                 </div>
               </div>
@@ -725,23 +715,18 @@
                 cols="30"
                 rows="4"
               ></textarea>
-              <button type="submit"
+
+              <input
                 class="SubmitButton"
-                id="catSubmitButton"
-              >Submit</button>
+                type="button"
+                name="submit"
+                value="SUBMIT"
+              />
             </div>
           </div>
         </div>
       </div>
     </div>
-
-
-        <!-- Script dog grooming -->
-        <script src="./scripts/script-doggrooming.js"></script>
-        <!-- Script cat grooming -->
-        <script src="./scripts/script-catgrooming.js"></script>
-          <!-- Importando smtpjs -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <!--Footer-->
     <footer id="footer">
@@ -760,7 +745,6 @@
       <p>© Copyright 2021 Paw2Go!</p>
     </footer>
 
-
     <!-- Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -777,7 +761,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <!-- Script de contacto -->
     <script src="./scripts/script-contact.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
