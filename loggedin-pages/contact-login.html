@@ -1,196 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Contact | PAW2GO!</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="../img/icon-sm-2.png" type="image/x-icon" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
-  <!-- Style CSS -->
-  <link rel="stylesheet" href="/style-petshop.css">
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Pet Shop | PAW2GO!</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" href="./img/icon-sm-2.png" type="image/x-icon">
-  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-
-<body>
-  <!-- barra de navegacion -->
-  <section id="NavBar">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <a href="./index.html"><img class="navbar-icon-lg" src="./img/icon-lg-2.png" alt="p2g Icon"></a>
-      <a href="./index.html"><img class="navbar-icon-sm" src="./img/icon-sm-2.png" alt="p2g Icon"></a>
-      <a class="navbar-brand" href="./index.html">Paw2Go!</a>
-      <div class="burger">
-        <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
-          data-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">Services</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <div>
-                <a class="dropdown-item Dog__cta" data-toggle="modal" data-target="#modalDog" href="#"><i
-                    class="fas fa-dog"></i> Dog Grooming</a>
+  <body>
+    <!-- NavBar -->
+    <section id="NavBar">
+      <nav class="navbar navbar-expand-xl navbar-dark nav-resp">
+        <a href="./index-login.html"
+          ><img class="navbar-icon-lg" src="../img/icon-lg-2.png" alt="p2g Icon"
+        /></a>
+        <a href="./index-login.html"
+          ><img class="navbar-icon-sm" src="../img/icon-sm-2.png" alt="p2g Icon"
+        /></a>
+        <a class="navbar-brand" href="./index-login.html">Paw2Go!</a>
+        <div class="burger">
+          <button
+            class="navbar-toggler ml-auto custom-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index-login.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Services</a
+              >
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <div>
+                  <a
+                    class="dropdown-item Dog__cta"
+                    data-toggle="modal"
+                    data-target="#modalDog"
+                    href="#"
+                    ><i class="fas fa-dog"></i> Dog Grooming</a
+                  >
+                </div>
+                <div>
+                  <a
+                    class="dropdown-item Cat__cta"
+                    data-toggle="modal"
+                    data-target="#modalCat"
+                    href="#"
+                    ><i class="fas fa-cat"></i> Cat Grooming</a
+                  >
+                </div>
               </div>
-              <div>
-                <a class="dropdown-item Cat__cta" data-toggle="modal" data-target="#modalCat" href="#"><i
-                    class="fas fa-cat"></i> Cat Grooming</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pet-shop-login.html">Pet Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact-login.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./aboutus-login.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Welcome</a
+              >
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink">
+                <div>
+                  <a class="dropdown-item Dog__cta" href="../index.html"
+                    ><i class="fas fa-sign-out-alt"></i>Sign out</a>
+                </div>
+              
+                </div>
+          </ul>
+        </div>
+      </nav>
+    </section>
+
+    <!--Contact-->
+    <section id="contact">
+      <video
+        autoplay
+        loop
+        muted
+        src="../img/perrito2.mp4"
+        class="video-container"
+      ></video>
+      <div class="conctact-container">
+        <div class="contactInfo">
+          <div class="center-contact">
+            <h2>Contact Info</h2>
+            <ul class="info">
+              <li class="cnt-font">
+                <span
+                  ><i class="fas fa-map-marked-alt fa-2x footer-icon"></i
+                ></span>
+                <span
+                  >Pet Street #36<br />
+                  Guadalajara, MX<br />
+                  45500</span
+                >
+              </li>
+              <li class="cnt-font">
+                <span><i class="fas fa-envelope fa-2x footer-icon"></i></span>
+                <span>paw2go.contacto@gmail.com</span>
+              </li>
+              <li class="cnt-font">
+                <span><i class="fas fa-phone-alt fa-2x footer-icon"></i></span>
+                <span>33 1462 5131</span>
+              </li>
+              <li class="btn-cnt">
+                <button
+                  type="button"
+                  class="btn btn-dark btn-contact"
+                  onclick="window.location.href='./pet-shop-login.html'"
+                >
+                  <i class="fas fa-bone btn-location mb-2 mt-1"></i
+                  ><span> Go shooping store!</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contactForm">
+          <h2>Send a Message</h2>
+          <form onsubmit="return false">
+            <div id="formulario" class="formBox">
+              <div class="inputBox w50">
+                <input type="text" name="firstName" required />
+                <span>First Name</span>
+              </div>
+              <div class="inputBox w50">
+                <input type="text" name="lastName" required />
+                <span>Last Name</span>
+              </div>
+              <div class="inputBox w50">
+                <input type="text" name="email" required />
+                <span>Email Address</span>
+              </div>
+              <div class="inputBox w50">
+                <input type="text" name="phone" required />
+                <span>Mobile Number</span>
+              </div>
+              <div class="inputBox w100">
+                <textarea name="message" required></textarea>
+                <span>Write your message here...</span>
+              </div>
+              <div class="inputBox w100">
+                <input id="sendButton" type="submit" value="Send" />
               </div>
             </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pet-shop.html">Pet Shop</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./aboutus.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./login-user.html">Login</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </section>
-
-  <!-- principal carrusel imagen -->
-  <section id="main-carousel">
-    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="./img/Toys (7).png" alt="Accesories">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="./img/Toys (12).png" alt="Dog Grooming">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="./img/Toys (14).png" alt="Cat Grooming">
+          </form>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- -------------------------botones del principio -->
-  
-  <div class="container-fluid">
-    <input type="radio" id="All" name="categories" value="All" checked>
-    <input type="radio" id="Health-&-wellness" name="categories" value="Health-&-wellness">
-    <input type="radio" id="Training-and-cleaning" name="categories" value="Training-and-cleaning">
-    <input type="radio" id="Home" name="categories" value="Home">
-    <input type="radio" id="Sand-and-accesories" name="categories" value="Sand-and-accesories">
-
-    <input type="radio" id="Transporters-and-travel" name="categories" value="Transporters-and-travel">
-    <input type="radio" id="transporters-and-travel" name="categories" value="transporters-and-travel">
-
-    <input type="radio" id="Toys" name="categories" value="Toys">
-    <input type="radio" id="Grooming" name="categories" value="Grooming">
-    <input type="radio" id="Dental-care" name="categories" value="Dental-care">
-    <input type="radio" id="Necklaces-leashes-and-clothes" name="categories" value="Necklaces-leashes-and-clothes">
-    <input type="radio" id="Dry-food" name="categories" value="Dry-food">
-    <input type="radio" id="Wet-food" name="categories" value="Wet-food">
-    <input type="radio" id="Dog" name="categories" value="Dog">
-    <input type="radio" id="Cat" name="categories" value="Cat">
-  
-
-    <!-- Comentado momentaneamente ya que no estan funcionando, son los filtros de categorias -->
-    <!-- 
-    <ol class="filters">
-      <li>
-        <label for="All">All</label>
-      </li>
-      <li>
-        <label for="Cat">Cat</label>
-      </li>
-      <li>
-        <label for="Dog">Dog</label>
-      </li>
-      <li>
-        <label for="Health-&-wellness">Health and Wellness</label>
-      </li>
-      <li>
-        <label for="Training-and-cleaning">Training and Cleaning</label>
-      </li>
-      <li>
-        <label for="Home">Home</label>
-      </li>
-      <li>
-        <label for="Sand-and-accesories">Cat Litter and Accesories</label>
-      </li>
-      <li>
-        <label for="Transporters-and-travel">Transporters and Travel</label>
-      </li>
-      <li>
-        <label for="Toys">Toys</label>
-      </li>
-      <li>
-        <label for="Grooming">Grooming</label>
-      </li>
-      <li>
-        <label for="Dental-care">Dental Care</label>
-      </li>
-      <li>
-        <label for="Necklaces-leashes-and-clothes">Necklaces, Leashes and Clothes</label>
-      </li>
-      <li>
-        <label for="Dry-food">Dry Food</label>
-      </li>
-      <li>
-        <label for="Wet-food">Wet Food</label>
-      </li>
-
-    </ol>
-  -->
-
-    <div class="lineadivision">
-      <hr width=50% size=5>
-    </div>
-
-    <!-- tarjetas de productos -->
-
-    <ol class="posts" id="lista-objetos">
-
-    </ol>
-
-    <!--================    MODAL PERRO Y GATO      ===========-->
+  <!--================    MODAL PERRO Y GATO      ===========-->
 
     <!-- MODAL PERRO -->
     <!-- ModalDog -->
-    <div class="modal fade" id="modalDog" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true">
+    <div
+      class="modal fade"
+      id="modalDog"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-body">
             <div class="modal__container">
-              <a href="#" data-dismiss="modal" class="close modalCat__close">X</a>
+              <a href="#" data-dismiss="modal" class="close modalCat__close"
+                >X</a
+              >
               <h2 class="modal__title navbar-brand">Dog Grooming!</h2>
               <span>
                 <i class="fas fa-dog iconGrooming navbar-brand"></i>
@@ -198,33 +239,68 @@
               <div class="position-labels">
                 <div class="row row1">
                   <div class="col-lg-10">
-                    <input class="formulary-label" id="customerName" type="text" name="Name" placeholder="Your Name"
-                      required />
+                    <input
+                      class="formulary-label"
+                      id="customerName"
+                      type="text"
+                      name="Name"
+                      placeholder="Your Name"
+                      required
+                    />
                   </div>
                   <div class="col-lg-5">
-                    <input class="formulary-label" id="customerPhone" type="number" name="Name"
-                      placeholder="Phone Number 1" required />
+                    <input
+                      class="formulary-label"
+                      id="customerPhone"
+                      type="number"
+                      name="Name"
+                      placeholder="Phone Number 1"
+                      required
+                    />
                   </div>
                   <div class="col-lg-5">
-                    <input class="formulary-label" id="customerPhoneAlter" type="number" name="Name"
-                      placeholder="Phone Number 2" />
+                    <input
+                      class="formulary-label"
+                      id="customerPhoneAlter"
+                      type="number"
+                      name="Name"
+                      placeholder="Phone Number 2"
+                    />
                   </div>
                 </div>
 
                 <div class="row row1">
                   <div class="col-lg-10">
-                    <input class="formulary-label" id="customerEmail" type="email" name="Name"
-                      placeholder="Email address" required />
+                    <input
+                      class="formulary-label"
+                      id="customerEmail"
+                      type="email"
+                      name="Name"
+                      placeholder="Email address"
+                      required
+                    />
                   </div>
                 </div>
 
                 <div class="row row1">
                   <div class="col-lg-5">
-                    <input class="formulary-label" id="dogName" type="text" name="Name" placeholder="Dog´s Name"
-                      required />
+                    <input
+                      class="formulary-label"
+                      id="dogName"
+                      type="text"
+                      name="Name"
+                      placeholder="Dog´s Name"
+                      required
+                    />
                   </div>
                   <div class="col-lg-5">
-                    <input class="formulary-label" id="dogAge" list="age" name="Dog's Age" placeholder="Dog´s Age" />
+                    <input
+                      class="formulary-label"
+                      id="dogAge"
+                      list="age"
+                      name="Dog's Age"
+                      placeholder="Dog´s Age"
+                    />
                     <datalist id="age">
                       <option value="Months"></option>
                       <option value="1 Year"></option>
@@ -237,7 +313,13 @@
                 </div>
                 <div class="row row1">
                   <div class="col-lg-10">
-                    <input class="formulary-label" id="dogBreed" list="DogBreed" name="Breed" placeholder="Breed" />
+                    <input
+                      class="formulary-label"
+                      id="dogBreed"
+                      list="DogBreed"
+                      name="Breed"
+                      placeholder="Breed"
+                    />
                     <datalist id="DogBreed">
                       <option value="Affenpinscher"></option>
                       <option value="Afghan Hound"></option>
@@ -367,7 +449,9 @@
                       <option value="Nowegian Elkhound"></option>
                       <option value="Norewegian Lundehund"></option>
                       <option value="Norwich Terrier"></option>
-                      <option value="Nova Scotia Duck Tolling Retriever"></option>
+                      <option
+                        value="Nova Scotia Duck Tolling Retriever"
+                      ></option>
                       <option value="Old English Sheepdog"></option>
                       <option value="Otterhound"></option>
                       <option value="Papillon"></option>
@@ -432,18 +516,26 @@
                 </div>
                 <div class="row row1">
                   <div class="col-lg-5">
-                    <input class="formulary-label" type="date" name="" id="" />
+                    <input class="formulary-label" type="date" name="" id="dogDate" />
                   </div>
                   <div class="col-lg-5">
-                    <input class="formulary-label" type="time" name="" id="" />
+                    <input class="formulary-label" type="time" name="" id="dogHour" />
                   </div>
                 </div>
               </div>
 
               <p class="modal__paragraph">Additional Instructions:</p>
-              <textarea class="textboxGrooming" name="textGrooming" id="additionalInstructions" cols="30"
-                rows="4"></textarea>
-              <button type="submit" class="SubmitButton" id="dogSubmitButton">Submit</button>
+              <textarea
+                class="textboxGrooming"
+                name="textGrooming"
+                id="additionalInstructions"
+                cols="30"
+                rows="4"
+              ></textarea>
+              <button type="submit"
+                class="SubmitButton"
+                id="dogSubmitButton"
+              >Submit</button>
             </div>
           </div>
         </div>
@@ -453,13 +545,21 @@
     <!-- Button trigger modal -->
 
     <!-- ModalCat -->
-    <div class="modal fade" id="modalCat" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true">
+    <div
+      class="modal fade"
+      id="modalCat"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-body">
             <div class="modal__container">
-              <a href="#" data-dismiss="modal" class="close modalCat__close">X</a>
+              <a href="#" data-dismiss="modal" class="close modalCat__close"
+                >X</a
+              >
 
               <h2 class="modal__title navbar-brand">Cat Grooming!</h2>
               <span>
@@ -468,38 +568,79 @@
               <div class="position-labels">
                 <div class="row row1">
                   <div class="col-lg-10">
-                    <input class="formulary-label" id="customerName" type="text" name="Name" placeholder="Your Name"
-                      required />
+                    <input
+                      class="formulary-label"
+                      id="customerName"
+                      type="text"
+                      name="Name"
+                      placeholder="Your Name"
+                      required
+                    />
                   </div>
                   <div class="col-lg-5">
-                    <input class="formulary-label" id="customerPhone" type="number" name="Name"
-                      placeholder="Phone Number 1" required />
+                    <input
+                      class="formulary-label"
+                      id="customerPhone"
+                      type="number"
+                      name="Name"
+                      placeholder="Phone Number 1"
+                      required
+                    />
                   </div>
                   <div class="col-lg-5">
-                    <input class="formulary-label" id="customerPhoneAlter" type="number" name="Name"
-                      placeholder="Phone Number 2" />
+                    <input
+                      class="formulary-label"
+                      id="customerPhoneAlter"
+                      type="number"
+                      name="Name"
+                      placeholder="Phone Number 2"
+                    />
                   </div>
                 </div>
 
                 <div class="row row1">
                   <div class="col-lg-10">
-                    <input class="formulary-label" id="customerEmail" type="email" name="Name"
-                      placeholder="Email address" required />
+                    <input
+                      class="formulary-label"
+                      id="customerEmail"
+                      type="email"
+                      name="Name"
+                      placeholder="Email address"
+                      required
+                    />
                   </div>
                 </div>
 
                 <div class="row row1">
                   <div class="col-lg-5">
-                    <input class="formulary-label" id="catName" type="text" name="Name" placeholder="Cat´s Name"
-                      required />
+                    <input
+                      class="formulary-label"
+                      id="catName"
+                      type="text"
+                      name="Name"
+                      placeholder="Cat´s Name"
+                      required
+                    />
                   </div>
                   <div class="col-lg-5">
-                    <input class="formulary-label" id="catAge" list="age" name="Dog's Age" placeholder="Cat´s Age" />
+                    <input
+                      class="formulary-label"
+                      id="catAge"
+                      list="age"
+                      name="Dog's Age"
+                      placeholder="Cat´s Age"
+                    />
                   </div>
                 </div>
                 <div class="row row1">
                   <div class="col-lg-10">
-                    <input class="formulary-label" id="catBreed" list="CatBreed" name="Breed" placeholder="Breed" />
+                    <input
+                      class="formulary-label"
+                      id="catBreed"
+                      list="CatBreed"
+                      name="Breed"
+                      placeholder="Breed"
+                    />
                     <datalist id="CatBreed">
                       <option value="American Shorthair"></option>
                       <option value="Abyssinian"></option>
@@ -584,68 +725,75 @@
                 </div>
                 <div class="row row1">
                   <div class="col-lg-5">
-                    <input class="formulary-label" type="date" name="" id="" />
+                    <input class="formulary-label" type="date" name="" id="catDate" />
                   </div>
                   <div class="col-lg-5">
-                    <input class="formulary-label" type="time" name="" id="" />
+                    <input class="formulary-label" type="time" name="" id="catHour" />
                   </div>
                 </div>
               </div>
 
               <p class="modal__paragraph">Additional Instructions:</p>
-              <textarea class="textboxGrooming" name="textGrooming" id="" cols="30" rows="4"></textarea>
-              <button type="submit" class="SubmitButton" id="catSubmitButton">Submit</button>
+              <textarea
+                class="textboxGrooming"
+                name="textGrooming"
+                id=""
+                cols="30"
+                rows="4"
+              ></textarea>
+              <button type="submit"
+                class="SubmitButton"
+                id="catSubmitButton"
+              >Submit</button>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--Script VENTANA MODAL PERRO Y GATO-->
-    <script src="./scripts/ModalDogGrooming.js"></script>
-    <script src="./scripts/ModalCatGrooming.js"></script>
 
-    <!-- Script dog grooming -->
-    <script src="./scripts/script-doggrooming.js"></script>
-    <!-- Script cat grooming -->
-    <script src="./scripts/script-catgrooming.js"></script>
-    <!-- Importando smtpjs -->
+
+        <!-- Script dog grooming -->
+        <script src="../scripts/script-doggrooming.js"></script>
+        <!-- Script cat grooming -->
+        <script src="../scripts/script-catgrooming.js"></script>
+          <!-- Importando smtpjs -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <!--Footer-->
-
-    <!--Footer-->
-
     <footer id="footer">
-      <a href="https://www.facebook.com/Paw2Go-104971268655992" target="_blank"><i
-          class="fab fa-facebook-square fa-2x footer-icon"></i></a>
-      <a href="https://www.instagram.com/paw2go/" target="_blank"><i class="fab fa-instagram fa-2x footer-icon"></i></a>
-      <a href="https://cat-bounce.com/" target="_blank"><i class="fab fa-whatsapp fa-2x footer-icon"></i></a>
-      <a href="mailto: paw2go.contacto@gmail.com" target="_blank"><i class="fas fa-envelope fa-2x footer-icon"></i></a>
+      <a href="https://www.facebook.com/Paw2Go-104971268655992" target="_blank"
+        ><i class="fab fa-facebook-square fa-2x footer-icon"></i
+      ></a>
+      <a href="https://www.instagram.com/paw2go/" target="_blank"
+        ><i class="fab fa-instagram fa-2x footer-icon"></i
+      ></a>
+      <a href="https://cat-bounce.com/" target="_blank"
+        ><i class="fab fa-whatsapp fa-2x footer-icon"></i
+      ></a>
+      <a href="mailto: paw2go.contacto@gmail.com" target="_blank"
+        ><i class="fas fa-envelope fa-2x footer-icon"></i
+      ></a>
       <p>© Copyright 2021 Paw2Go!</p>
     </footer>
 
 
-
-
     <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"></script>
-
-
-
-
-
-</body>
-
-<script src="./scripts/showItems.js"></script>
-</body>
-
-
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script de contacto -->
+    <script src="../scripts/script-contact.js"></script>
+  </body>
 </html>

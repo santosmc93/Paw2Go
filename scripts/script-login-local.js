@@ -24,12 +24,14 @@ botonRegistrar.addEventListener("click", function crearUsuario(e){
         user.full_name = fullName;
 
         let registerUserJson = JSON.stringify(user);
+        console.log
 
         fetch(`http://localhost:8080/users/display/${name}`, {  
-        method: 'GET',
+        method: 'GET'
         })
             .then(res => res.json())
             .then(data => { 
+                console.log(data)
                 if(name == data.user_name){
                   alert("Username is already in use");
                 }
@@ -56,32 +58,33 @@ botonRegistrar.addEventListener("click", function crearUsuario(e){
     }
 });
 
-// acceder a la base de datos login
-  document.getElementById("sign-in-btn").addEventListener("click", function singup (e){
+
+//Evento para inicializar el evento de ingreso de usuarios
+
+document.getElementById("sign-in-btn").addEventListener("click", function validate(e){
     e.preventDefault();
 
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
     password = btoa(password);
 
-    console.log(password)
     fetch(`http://localhost:8080/users/display/${username}`, { 
-             method: 'GET',
-             })
-                 .then(res => res.json())
-                 .then(data => {
-                     
-                   if(password == data.password && username == data.userName){
-                     alert ("You have logged in successfuly");
-                    location.href="/index.html";
+            method: 'GET',
+            })
+                .then(res => res.json())
+                .then(data => { 
+                    
+                  if(password == data.password && username == data.userName){
+                    alert ("You have logged in successfuly")
+                    location.href="/loggedin-pages/index-login.html";
                   }else{
-                     alert("Username or Password incorrect try again");
+                    alert(" Username or Password incorrect try again");
                   }
-
-                 })
-             .catch((error) => {
+                  
+            })
+            .catch((error) => {
                 console.error("error",error);
-                 alert("User does not exists");
-             }); 
-          });
+                alert("User does not exists");
+            }); 
+    });
 

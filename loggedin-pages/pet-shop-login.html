@@ -22,7 +22,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
   <!-- Style CSS -->
   <link rel="stylesheet" href="/style-petshop.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -30,16 +30,18 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Pet Shop | PAW2GO!</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" href="./img/icon-sm-2.png" type="image/x-icon">
+  <link rel="icon" href="/img/icon-sm-2.png" type="image/x-icon">
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 
 <body>
-  <!-- barra de navegacion -->
+  <!-- NavBar -->
   <section id="NavBar">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <a href="./index.html"><img class="navbar-icon-lg" src="./img/icon-lg-2.png" alt="p2g Icon"></a>
-      <a href="./index.html"><img class="navbar-icon-sm" src="./img/icon-sm-2.png" alt="p2g Icon"></a>
-      <a class="navbar-brand" href="./index.html">Paw2Go!</a>
+    <nav class="navbar navbar-expand-xl navbar-dark nav-resp">
+      <a href="/loggedin-pages/index-login.html"><img class="navbar-icon-lg" src="/img/icon-lg-2.png"
+          alt="p2g Icon" /></a>
+      <a href="/loggedin-pages/index-login.html"><img class="navbar-icon-sm" src="/img/icon-sm-2.png"
+          alt="p2g Icon" /></a>
+      <a class="navbar-brand" href="/loggedin-pages/index-login.html">Paw2Go!</a>
       <div class="burger">
         <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
           data-target="#navbarNav">
@@ -49,11 +51,11 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="./index.html">Home</a>
+            <a class="nav-link" href="/loggedin-pages/index-login.html">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">Services</a>
+            <a class="nav-link dropdown-toggle" href="/loggedin-pages/grooming-login.html" id="navbarDropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <div>
                 <a class="dropdown-item Dog__cta" data-toggle="modal" data-target="#modalDog" href="#"><i
@@ -66,17 +68,22 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pet-shop.html">Pet Shop</a>
+            <a class="nav-link" href="/loggedin-pages/pet-shop-login.html">Pet Shop</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contact</a>
+            <a class="nav-link" href="/loggedin-pages/contact-login.html">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./aboutus.html">About Us</a>
+            <a class="nav-link" href="/loggedin-pages/aboutus-login.html">About Us</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./login-user.html">Login</a>
-          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Welcome</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <div>
+                <a class="dropdown-item Dog__cta" href="../index.html"><i class="fas fa-sign-out-alt"></i>Sign out</a>
+              </div>
+            </div>
         </ul>
       </div>
     </nav>
@@ -87,20 +94,19 @@
     <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-pause="false">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="./img/Toys (7).png" alt="Accesories">
+          <img class="d-block w-100" src="/img/Toys (7).png" alt="Accesories">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="./img/Toys (12).png" alt="Dog Grooming">
+          <img class="d-block w-100" src="/img/Toys (12).png" alt="Dog Grooming">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="./img/Toys (14).png" alt="Cat Grooming">
+          <img class="d-block w-100" src="/img/Toys (14).png" alt="Cat Grooming">
         </div>
       </div>
     </div>
   </section>
 
   <!-- -------------------------botones del principio -->
-  
   <div class="container-fluid">
     <input type="radio" id="All" name="categories" value="All" checked>
     <input type="radio" id="Health-&-wellness" name="categories" value="Health-&-wellness">
@@ -119,10 +125,7 @@
     <input type="radio" id="Wet-food" name="categories" value="Wet-food">
     <input type="radio" id="Dog" name="categories" value="Dog">
     <input type="radio" id="Cat" name="categories" value="Cat">
-  
 
-    <!-- Comentado momentaneamente ya que no estan funcionando, son los filtros de categorias -->
-    <!-- 
     <ol class="filters">
       <li>
         <label for="All">All</label>
@@ -168,7 +171,6 @@
       </li>
 
     </ol>
-  -->
 
     <div class="lineadivision">
       <hr width=50% size=5>
@@ -432,10 +434,10 @@
                 </div>
                 <div class="row row1">
                   <div class="col-lg-5">
-                    <input class="formulary-label" type="date" name="" id="" />
+                    <input class="formulary-label" type="date" name="" id="dogDate" />
                   </div>
                   <div class="col-lg-5">
-                    <input class="formulary-label" type="time" name="" id="" />
+                    <input class="formulary-label" type="time" name="" id="dogHour" />
                   </div>
                 </div>
               </div>
@@ -584,10 +586,10 @@
                 </div>
                 <div class="row row1">
                   <div class="col-lg-5">
-                    <input class="formulary-label" type="date" name="" id="" />
+                    <input class="formulary-label" type="date" name="" id="catDate" />
                   </div>
                   <div class="col-lg-5">
-                    <input class="formulary-label" type="time" name="" id="" />
+                    <input class="formulary-label" type="time" name="" id="catHour" />
                   </div>
                 </div>
               </div>
@@ -601,13 +603,13 @@
       </div>
     </div>
     <!--Script VENTANA MODAL PERRO Y GATO-->
-    <script src="./scripts/ModalDogGrooming.js"></script>
-    <script src="./scripts/ModalCatGrooming.js"></script>
+    <script src="/scripts/ModalDogGrooming.js"></script>
+    <script src="/scripts/ModalCatGrooming.js"></script>
 
     <!-- Script dog grooming -->
-    <script src="./scripts/script-doggrooming.js"></script>
+    <script src="/scripts/script-doggrooming.js"></script>
     <!-- Script cat grooming -->
-    <script src="./scripts/script-catgrooming.js"></script>
+    <script src="/scripts/script-catgrooming.js"></script>
     <!-- Importando smtpjs -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
 
@@ -644,7 +646,7 @@
 
 </body>
 
-<script src="./scripts/showItems.js"></script>
+<script src="../scripts/showItems.js"></script>
 </body>
 
 

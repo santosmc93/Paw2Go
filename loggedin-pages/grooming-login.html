@@ -18,23 +18,25 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet" />
   <!-- Style CSS -->
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="/style.css" />
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Services | PAW2GO!</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="icon" href="./img/icon-sm-2.png" type="image/x-icon" />
+  <link rel="icon" href="/img/icon-sm-2.png" type="image/x-icon" />
 </head>
 
 <body>
   <!-- NavBar -->
   <section id="NavBar">
     <nav class="navbar navbar-expand-xl navbar-dark nav-resp">
-      <a href="./index.html"><img class="navbar-icon-lg" src="./img/icon-lg-2.png" alt="p2g Icon" /></a>
-      <a href="./index.html"><img class="navbar-icon-sm" src="./img/icon-sm-2.png" alt="p2g Icon" /></a>
-      <a class="navbar-brand" href="./index.html">Paw2Go!</a>
+      <a href="/loggedin-pages/index-login.html"><img class="navbar-icon-lg" src="/img/icon-lg-2.png"
+          alt="p2g Icon" /></a>
+      <a href="/loggedin-pages/index-login.html"><img class="navbar-icon-sm" src="/img/icon-sm-2.png"
+          alt="p2g Icon" /></a>
+      <a class="navbar-brand" href="/loggedin-pages/index-login.html">Paw2Go!</a>
       <div class="burger">
         <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse"
           data-target="#navbarNav">
@@ -44,11 +46,11 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="./index.html">Home</a>
+            <a class="nav-link" href="/loggedin-pages/index-login.html">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">Services</a>
+            <a class="nav-link dropdown-toggle" href="/loggedin-pages/grooming-login.html" id="navbarDropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <div>
                 <a class="dropdown-item Dog__cta" data-toggle="modal" data-target="#modalDog" href="#"><i
@@ -61,17 +63,22 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pet-shop.html">Pet Shop</a>
+            <a class="nav-link" href="/loggedin-pages/pet-shop-login.html">Pet Shop</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contact</a>
+            <a class="nav-link" href="/loggedin-pages/contact-login.html">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./aboutus.html">About Us</a>
+            <a class="nav-link" href="/loggedin-pages/aboutus-login.html">About Us</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./login-user.html">Login</a>
-          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Welcome</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <div>
+                <a class="dropdown-item Dog__cta" href="../index.html"><i class="fas fa-sign-out-alt"></i>Sign out</a>
+              </div>
+            </div>
         </ul>
       </div>
     </nav>
@@ -80,7 +87,7 @@
   <!-- PERRO Y GATO ICONOS-->
 
   <div class="services-container">
-    <video autoplay loop muted src="./img/services.mp4" class="video-container-services"></video>
+    <video autoplay loop muted src="/img/services.mp4" class="video-container-services"></video>
     <p id="TellUs">Tell us about your pet</p>
     <div class="services-container_pet">
       <div class="dog-container">
@@ -518,13 +525,13 @@
   </div>
 
   <!--Script VENTANA MODAL PERRO Y GATO-->
-  <script src="./scripts/ModalDogGrooming.js"></script>
-  <script src="./scripts/ModalCatGrooming.js"></script>
+  <script src="/scripts/ModalDogGrooming.js"></script>
+  <script src="/scripts/ModalCatGrooming.js"></script>
 
   <!-- Script dog grooming -->
-  <script src="./scripts/script-doggrooming.js"></script>
+  <script src="/scripts/script-doggrooming.js"></script>
   <!-- Script cat grooming -->
-  <script src="./scripts/script-catgrooming.js"></script>
+  <script src="/scripts/script-catgrooming.js"></script>
   <!-- Importando smtpjs -->
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <!--Footer-->
