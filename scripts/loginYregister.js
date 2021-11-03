@@ -9,7 +9,7 @@ document.getElementById("registrar").addEventListener("click", function crear (e
 
   // verificacion de contraseñas
   if(password2 !=password1){
-    alert (" Passwords not match"); 
+    alert (" Passwords do not match"); 
   }if(password1.length < 8){
     alert( "Password must have at least 8 characters");
   }else{ 
@@ -51,7 +51,7 @@ document.getElementById("registrar").addEventListener("click", function crear (e
                                   
                     })
                     .catch((error) => {
-                      alert("You have sucesfully created an account");
+                      alert("You have successfully created an account");
                       location.href="/login.html";
                   });
             });
@@ -82,6 +82,6 @@ document.getElementById("LOGIN").addEventListener("click", function Login (e){
             })
             .catch((error) => {
                 console.error("error",error);
-                alert("user does not exists");
+                alert("User does not exist");
             }); 
           });

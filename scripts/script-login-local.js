@@ -10,8 +10,8 @@ botonRegistrar.addEventListener("click", function crearUsuario(e){
     let password2 = document.getElementById("password2").value;
 
     if (password2 != password1) {
-        alert("Passwords not match");
-    } if (password1.length < 4) {
+        alert("Passwords do not match");
+    } if (password1.length < 8) {
         alert("Password must have at least 8 characters");
     } else {
         //Encriptacion de la contrasena
@@ -51,7 +51,7 @@ botonRegistrar.addEventListener("click", function crearUsuario(e){
                               
                 })
                 .catch((error) => {
-                  alert("You have sucesfully created an account");
+                  alert("You have successfully created an account");
                   location.href="/login-user.html";
               });
         });
