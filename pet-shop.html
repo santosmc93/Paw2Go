@@ -176,20 +176,25 @@
 
     </ol>
 
-
-
-
-    <!--================    MODAL PERRO Y GATO      ===========-->
+  <!--================    MODAL PERRO Y GATO      ===========-->
 
     <!-- MODAL PERRO -->
     <!-- ModalDog -->
-    <div class="modal fade" id="modalDog" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true">
+    <div
+      class="modal fade"
+      id="modalDog"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-body">
             <div class="modal__container">
-              <a href="#" data-dismiss="modal" class="close modalCat__close">X</a>
+              <a href="#" data-dismiss="modal" class="close modalCat__close"
+                >X</a
+              >
               <h2 class="modal__title navbar-brand">Dog Grooming!</h2>
               <span>
                 <i class="fas fa-dog iconGrooming navbar-brand"></i>
@@ -197,28 +202,68 @@
               <div class="position-labels">
                 <div class="row row1">
                   <div class="col-lg-10">
-                    <input class="formulary-label" type="text" name="Name" placeholder="Your Name" required />
+                    <input
+                      class="formulary-label"
+                      id="customerName"
+                      type="text"
+                      name="Name"
+                      placeholder="Your Name"
+                      required
+                    />
                   </div>
                   <div class="col-lg-5">
-                    <input class="formulary-label" type="number" name="Name" placeholder="Phone Number 1" required />
+                    <input
+                      class="formulary-label"
+                      id="customerPhone"
+                      type="number"
+                      name="Name"
+                      placeholder="Phone Number 1"
+                      required
+                    />
                   </div>
                   <div class="col-lg-5">
-                    <input class="formulary-label" type="number" name="Name" placeholder="Phone Number 2" />
+                    <input
+                      class="formulary-label"
+                      id="customerPhoneAlter"
+                      type="number"
+                      name="Name"
+                      placeholder="Phone Number 2"
+                    />
                   </div>
                 </div>
 
                 <div class="row row1">
                   <div class="col-lg-10">
-                    <input class="formulary-label" type="email" name="Name" placeholder="Email address" required />
+                    <input
+                      class="formulary-label"
+                      id="customerEmail"
+                      type="email"
+                      name="Name"
+                      placeholder="Email address"
+                      required
+                    />
                   </div>
                 </div>
 
                 <div class="row row1">
                   <div class="col-lg-5">
-                    <input class="formulary-label" type="text" name="Name" placeholder="Dog´s Name" required />
+                    <input
+                      class="formulary-label"
+                      id="dogName"
+                      type="text"
+                      name="Name"
+                      placeholder="Dog´s Name"
+                      required
+                    />
                   </div>
                   <div class="col-lg-5">
-                    <input class="formulary-label" list="age" name="Dog's Age" placeholder="Dog´s Age" />
+                    <input
+                      class="formulary-label"
+                      id="dogAge"
+                      list="age"
+                      name="Dog's Age"
+                      placeholder="Dog´s Age"
+                    />
                     <datalist id="age">
                       <option value="Months"></option>
                       <option value="1 Year"></option>
@@ -231,7 +276,13 @@
                 </div>
                 <div class="row row1">
                   <div class="col-lg-10">
-                    <input class="formulary-label" list="DogBreed" name="Breed" placeholder="Breed" />
+                    <input
+                      class="formulary-label"
+                      id="dogBreed"
+                      list="DogBreed"
+                      name="Breed"
+                      placeholder="Breed"
+                    />
                     <datalist id="DogBreed">
                       <option value="Affenpinscher"></option>
                       <option value="Afghan Hound"></option>
@@ -361,7 +412,9 @@
                       <option value="Nowegian Elkhound"></option>
                       <option value="Norewegian Lundehund"></option>
                       <option value="Norwich Terrier"></option>
-                      <option value="Nova Scotia Duck Tolling Retriever"></option>
+                      <option
+                        value="Nova Scotia Duck Tolling Retriever"
+                      ></option>
                       <option value="Old English Sheepdog"></option>
                       <option value="Otterhound"></option>
                       <option value="Papillon"></option>
@@ -426,18 +479,26 @@
                 </div>
                 <div class="row row1">
                   <div class="col-lg-5">
-                    <input class="formulary-label" type="date" name="" id="" />
+                    <input class="formulary-label" type="date" name="" id="dogDate" />
                   </div>
                   <div class="col-lg-5">
-                    <input class="formulary-label" type="time" name="" id="" />
+                    <input class="formulary-label" type="time" name="" id="dogHour" />
                   </div>
                 </div>
               </div>
 
               <p class="modal__paragraph">Additional Instructions:</p>
-              <textarea class="textboxGrooming" name="textGrooming" id="" cols="30" rows="4"></textarea>
-
-              <input class="SubmitButton" type="button" name="submit" value="SUBMIT" />
+              <textarea
+                class="textboxGrooming"
+                name="textGrooming"
+                id="additionalInstructions"
+                cols="30"
+                rows="4"
+              ></textarea>
+              <button type="submit"
+                class="SubmitButton"
+                id="dogSubmitButton"
+              >Submit</button>
             </div>
           </div>
         </div>
@@ -447,13 +508,21 @@
     <!-- Button trigger modal -->
 
     <!-- ModalCat -->
-    <div class="modal fade" id="modalCat" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-      aria-hidden="true">
+    <div
+      class="modal fade"
+      id="modalCat"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-body">
             <div class="modal__container">
-              <a href="#" data-dismiss="modal" class="close modalCat__close">X</a>
+              <a href="#" data-dismiss="modal" class="close modalCat__close"
+                >X</a
+              >
 
               <h2 class="modal__title navbar-brand">Cat Grooming!</h2>
               <span>
@@ -462,33 +531,79 @@
               <div class="position-labels">
                 <div class="row row1">
                   <div class="col-lg-10">
-                    <input class="formulary-label" type="text" name="Name" placeholder="Your Name" required />
+                    <input
+                      class="formulary-label"
+                      id="customerName"
+                      type="text"
+                      name="Name"
+                      placeholder="Your Name"
+                      required
+                    />
                   </div>
                   <div class="col-lg-5">
-                    <input class="formulary-label" type="number" name="Name" placeholder="Phone Number 1" required />
+                    <input
+                      class="formulary-label"
+                      id="customerPhone"
+                      type="number"
+                      name="Name"
+                      placeholder="Phone Number 1"
+                      required
+                    />
                   </div>
                   <div class="col-lg-5">
-                    <input class="formulary-label" type="number" name="Name" placeholder="Phone Number 2" />
+                    <input
+                      class="formulary-label"
+                      id="customerPhoneAlter"
+                      type="number"
+                      name="Name"
+                      placeholder="Phone Number 2"
+                    />
                   </div>
                 </div>
 
                 <div class="row row1">
                   <div class="col-lg-10">
-                    <input class="formulary-label" type="email" name="Name" placeholder="Email address" required />
+                    <input
+                      class="formulary-label"
+                      id="customerEmail"
+                      type="email"
+                      name="Name"
+                      placeholder="Email address"
+                      required
+                    />
                   </div>
                 </div>
 
                 <div class="row row1">
                   <div class="col-lg-5">
-                    <input class="formulary-label" type="text" name="Name" placeholder="Cat´s Name" required />
+                    <input
+                      class="formulary-label"
+                      id="catName"
+                      type="text"
+                      name="Name"
+                      placeholder="Cat´s Name"
+                      required
+                    />
                   </div>
                   <div class="col-lg-5">
-                    <input class="formulary-label" list="age" name="Dog's Age" placeholder="Cat´s Age" />
+                    <input
+                      class="formulary-label"
+                      id="catAge"
+                      list="age"
+                      name="Dog's Age"
+                      placeholder="Cat´s Age"
+                    />
                   </div>
                 </div>
                 <div class="row row1">
                   <div class="col-lg-10">
-                    <input class="formulary-label" list="CatBreed" name="Breed" placeholder="Breed" />
+                    <input
+                      class="formulary-label"
+                      id="catBreed"
+                      list="CatBreed"
+                      name="Breed"
+                      placeholder="Breed"
+                    />
                     <datalist id="CatBreed">
                       <option value="American Shorthair"></option>
                       <option value="Abyssinian"></option>
@@ -573,18 +688,26 @@
                 </div>
                 <div class="row row1">
                   <div class="col-lg-5">
-                    <input class="formulary-label" type="date" name="" id="" />
+                    <input class="formulary-label" type="date" name="" id="catDate" />
                   </div>
                   <div class="col-lg-5">
-                    <input class="formulary-label" type="time" name="" id="" />
+                    <input class="formulary-label" type="time" name="" id="catHour" />
                   </div>
                 </div>
               </div>
 
               <p class="modal__paragraph">Additional Instructions:</p>
-              <textarea class="textboxGrooming" name="textGrooming" id="" cols="30" rows="4"></textarea>
-
-              <input class="SubmitButton" type="button" name="submit" value="SUBMIT" />
+              <textarea
+                class="textboxGrooming"
+                name="textGrooming"
+                id=""
+                cols="30"
+                rows="4"
+              ></textarea>
+              <button type="submit"
+                class="SubmitButton"
+                id="catSubmitButton"
+              >Submit</button>
             </div>
           </div>
         </div>
@@ -593,6 +716,13 @@
     <!--Script VENTANA MODAL PERRO Y GATO-->
     <script src="./scripts/ModalDogGrooming.js"></script>
     <script src="./scripts/ModalCatGrooming.js"></script>
+
+        <!-- Script dog grooming -->
+        <script src="./scripts/script-doggrooming.js"></script>
+        <!-- Script cat grooming -->
+        <script src="./scripts/script-catgrooming.js"></script>
+            <!-- Importando smtpjs -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <!--Footer-->
 
