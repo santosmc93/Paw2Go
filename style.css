@@ -254,7 +254,8 @@ body,html{
   color: black;
   background-color: #fff;
   width: 100%;
-  top: 6rem;
+  height: 5rem;
+
   bottom: 0px;
   position:relative;
 }
