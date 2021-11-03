@@ -170,6 +170,14 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  @media screen and (max-width: 500px) {
+    .posts {
+      width: 100%;
+      display: block;
+      margin-bottom: 3rem;
+    }
+  }
+
   
   /* .posts .post {
     background: #fafafa;
@@ -214,7 +222,7 @@
   .posts .post-categories a:hover {
     background: var(--white);
     color: var(--red);
-  } */
+  } 
   
   
   /* FILTERING RULES
@@ -315,6 +323,20 @@
   text-align: center;
   font-family: arial;
   height: 500px;
+  background-color: #fdf7e6;
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    margin-bottom: 3rem;
+  }
+}
+
+.card:hover{
+  -webkit-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .card img{
