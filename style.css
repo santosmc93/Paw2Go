@@ -254,8 +254,9 @@ body,html{
   color: black;
   background-color: #fff;
   width: 100%;
-  bottom: 0;
-  position: static;
+  top: 6rem;
+  bottom: 0px;
+  position:relative;
 }
 
 
