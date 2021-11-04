@@ -1,0 +1,65 @@
+.contenedor-menu {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25rem;
+    padding-top: 2.5rem;
+}
+
+.link-menu {
+    height: 10rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: calc(33.3% - 25px);
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+}
+
+.link-menu:hover {
+    cursor: pointer;
+}
+
+.background {
+    height: 30rem;
+    background-image: url(./img/FotoMascotasSeguro-1920x733.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.barra-botones {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.barra-botones button {
+    width: 250px
+}
+
+.lista-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 25px;
+}
+
+.card-grid {
+    grid-column: 2/3;
+}
+
+
+.card img {
+    height: 350px;
+}
